@@ -24362,8 +24362,8 @@ using ameteur radio standard layout</description>
 <connect gate="G$1" pin="ADC5" pad="A10"/>
 <connect gate="G$1" pin="ADC6" pad="A8"/>
 <connect gate="G$1" pin="ADC7" pad="A6"/>
-<connect gate="G$1" pin="ADC_3V3" pad="A4 A14"/>
-<connect gate="G$1" pin="AGND" pad="A1 A2 A11 A12"/>
+<connect gate="G$1" pin="ADC_3V3" pad="A4 A14" route="any"/>
+<connect gate="G$1" pin="AGND" pad="A1 A2 A11 A12" route="any"/>
 <connect gate="G$1" pin="ALERT" pad="C41"/>
 <connect gate="G$1" pin="BSL_RX" pad="C47"/>
 <connect gate="G$1" pin="BSL_TX" pad="C53"/>
@@ -24375,8 +24375,8 @@ using ameteur radio standard layout</description>
 <connect gate="G$1" pin="CAOUT" pad="C54"/>
 <connect gate="G$1" pin="CDP-3.3V" pad="B20"/>
 <connect gate="G$1" pin="CPDGND" pad="B18"/>
-<connect gate="G$1" pin="D-3V" pad="B22 C40"/>
-<connect gate="G$1" pin="DGND" pad="B24 C39"/>
+<connect gate="G$1" pin="D-3V" pad="B22 C40" route="any"/>
+<connect gate="G$1" pin="DGND" pad="B24 C39" route="any"/>
 <connect gate="G$1" pin="D_N" pad="B21"/>
 <connect gate="G$1" pin="D_P" pad="B19"/>
 <connect gate="G$1" pin="I2C_SCL" pad="B26"/>
@@ -28157,22 +28157,22 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="L4" library="rcl" deviceset="L-EU" device="6000-XXX-RC" value="20uH"/>
 <part name="C7" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="330uF"/>
 <part name="GND57" library="supply1" deviceset="GND" device=""/>
-<part name="LED8" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="LED8" library="led" deviceset="LED" device="CHIP-LED0805" value="12V"/>
 <part name="R19" library="resistor" deviceset="R-EU_" device="R0805" value="560"/>
 <part name="P+7" library="supply1" deviceset="+12V" device=""/>
 <part name="R29" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
 <part name="R30" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
-<part name="LED14" library="led" deviceset="LED" device="CHIP-LED0805"/>
-<part name="LED15" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="LED14" library="led" deviceset="LED" device="CHIP-LED0805" value="BAT_EN"/>
+<part name="LED15" library="led" deviceset="LED" device="CHIP-LED0805" value="SENSE_EN"/>
 <part name="GND63" library="supply1" deviceset="GND" device=""/>
 <part name="J3" library="farnell-parts" deviceset="2-PIN-MOLEX" device="" value="LED-EN"/>
-<part name="LED12" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="LED12" library="led" deviceset="LED" device="CHIP-LED0805" value="RADIO"/>
 <part name="R27" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
-<part name="LED11" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="LED11" library="led" deviceset="LED" device="CHIP-LED0805" value="SENSE_5V"/>
 <part name="R25" library="resistor" deviceset="R-EU_" device="R0805" value="150"/>
-<part name="LED10" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="LED10" library="led" deviceset="LED" device="CHIP-LED0805" value="SENSE"/>
 <part name="R21" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
-<part name="LED9" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="LED9" library="led" deviceset="LED" device="CHIP-LED0805" value="3V3"/>
 <part name="R20" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
 <part name="J1" library="powerpoles" deviceset="POWERPOLE_POWER" device="25A" value="POWERPOLE_POWER25A"/>
 <part name="U2" library="farnell-parts" deviceset="LT1934ES6TRMPBF" device=""/>
@@ -28226,7 +28226,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="Q1" library="farnell-parts" deviceset="DMG6602SVT" device=""/>
 <part name="Q2" library="farnell-parts" deviceset="DMG6602SVT" device=""/>
-<part name="LED13" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="LED13" library="led" deviceset="LED" device="CHIP-LED0805" value="RADIO_EN"/>
 <part name="R28" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
 <part name="IC1" library="maxim" deviceset="MAX3232*" device="UE" technology="E"/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
@@ -28252,7 +28252,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="J4" library="farnell-parts" deviceset="5-PIN-MOLEX" device="" value="RS232"/>
 <part name="R32" library="resistor" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="J5" library="farnell-parts" deviceset="5-PIN-MOLEX" device="" value="TTL_SERIAL"/>
+<part name="J5" library="farnell-parts" deviceset="5-PIN-MOLEX" device="" value="RS485"/>
 <part name="JP1" library="SparkFun-Passives" deviceset="JUMPER-2" device="SMD-NC"/>
 <part name="J10" library="farnell-parts" deviceset="5-PIN-MOLEX" device="" value="Radio"/>
 <part name="FRAME5" library="frames" deviceset="A3L-LOC" device="" value="POWER"/>
@@ -28286,17 +28286,17 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="J22" library="farnell-parts" deviceset="4-PIN-MOLEX" device="" value="D7"/>
 <part name="R17" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
 <part name="R18" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
-<part name="LED6" library="led" deviceset="LED" device="CHIP-LED0805"/>
-<part name="LED7" library="led" deviceset="LED" device="CHIP-LED0805"/>
-<part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="LED6" library="led" deviceset="LED" device="CHIP-LED0805" value="D6"/>
+<part name="LED7" library="led" deviceset="LED" device="CHIP-LED0805" value="D7"/>
+<part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805" value="D4"/>
 <part name="R15" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
-<part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805" value="D3"/>
 <part name="R13" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
-<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="D2"/>
 <part name="R10" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
-<part name="LED5" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="LED5" library="led" deviceset="LED" device="CHIP-LED0805" value="D5"/>
 <part name="R16" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
-<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="D1"/>
 <part name="R8" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
 <part name="BATV_B" library="testpad" deviceset="TP" device="B2,54" value="5V B"/>
 <part name="D1" library="diode" deviceset="DIODE-" device="SMB"/>
@@ -28305,6 +28305,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="L7" library="resistor" deviceset="L-EU" device="L3230M" value="10mH"/>
 <part name="L8" library="resistor" deviceset="L-EU" device="L3230M" value="10mH"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="AGND" library="testpad" deviceset="TP" device="B2,54"/>
 </parts>
 <sheets>
 <sheet>
@@ -28328,6 +28329,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="185.42" y1="114.3" x2="383.54" y2="114.3" width="0.6096" layer="104"/>
 <wire x1="185.42" y1="114.3" x2="185.42" y2="5.08" width="0.6096" layer="104"/>
 <text x="203.2" y="10.16" size="6.4516" layer="104">5V Sense PSU</text>
+<wire x1="104.14" y1="182.88" x2="53.34" y2="182.88" width="0.6096" layer="95"/>
+<text x="60.96" y="185.42" size="6.4516" layer="97">AGround</text>
 </plain>
 <instances>
 <instance part="GND60" gate="1" x="83.82" y="226.06"/>
@@ -28451,6 +28454,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="C25" gate="G$1" x="190.5" y="152.4"/>
 <instance part="L7" gate="G$1" x="180.34" y="154.94" rot="R270"/>
 <instance part="L8" gate="G$1" x="180.34" y="147.32" rot="R270"/>
+<instance part="AGND" gate="G$1" x="83.82" y="205.74"/>
 </instances>
 <busses>
 </busses>
@@ -28608,9 +28612,9 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </net>
 <net name="DC_IN" class="0">
 <segment>
-<wire x1="60.96" y1="238.76" x2="45.72" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="238.76" x2="43.18" y2="238.76" width="0.1524" layer="91"/>
 <label x="50.8" y="238.76" size="1.778" layer="95"/>
-<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 </segment>
 <segment>
@@ -28821,8 +28825,8 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="V+"/>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="238.76" x2="43.18" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="238.76" x2="45.72" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -29215,6 +29219,13 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="165.1" y1="200.66" x2="152.4" y2="200.66" width="0.1524" layer="91"/>
 <label x="152.4" y="200.66" size="1.778" layer="95"/>
 <junction x="165.1" y="200.66"/>
+</segment>
+<segment>
+<wire x1="55.88" y1="203.2" x2="83.82" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="AGND" gate="G$1" pin="TP"/>
+<wire x1="83.82" y1="203.2" x2="88.9" y2="203.2" width="0.1524" layer="91"/>
+<junction x="83.82" y="203.2"/>
+<label x="60.96" y="203.2" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -30799,20 +30810,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <label x="86.36" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SPI_SIMO" class="0">
-<segment>
-<pinref part="J10" gate="G$1" pin="6"/>
-<wire x1="81.28" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
-<label x="86.36" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SPI_SOMI" class="0">
-<segment>
-<pinref part="J10" gate="G$1" pin="4"/>
-<wire x1="81.28" y1="83.82" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
-<label x="86.36" y="83.82" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SPI_CLK" class="0">
 <segment>
 <pinref part="J10" gate="G$1" pin="3"/>
@@ -30864,6 +30861,20 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="30.48" y1="134.62" x2="10.16" y2="134.62" width="0.1524" layer="91"/>
 <label x="10.16" y="134.62" size="1.778" layer="95"/>
 <junction x="30.48" y="134.62"/>
+</segment>
+</net>
+<net name="SPI_SIMO" class="0">
+<segment>
+<pinref part="J10" gate="G$1" pin="4"/>
+<wire x1="81.28" y1="83.82" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
+<label x="86.36" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPI_SOMI" class="0">
+<segment>
+<pinref part="J10" gate="G$1" pin="6"/>
+<wire x1="81.28" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
+<label x="86.36" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
