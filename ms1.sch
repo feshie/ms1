@@ -24292,52 +24292,52 @@ using ameteur radio standard layout</description>
 </packages>
 <symbols>
 <symbol name="Z1">
-<pin name="ADC0" x="-35.56" y="22.86" length="middle"/>
-<pin name="ADC1" x="-35.56" y="20.32" length="middle"/>
-<pin name="ADC2" x="-35.56" y="17.78" length="middle"/>
-<pin name="ADC3" x="-35.56" y="15.24" length="middle"/>
-<pin name="ADC4" x="-35.56" y="12.7" length="middle"/>
-<pin name="ADC5" x="-35.56" y="10.16" length="middle"/>
-<pin name="ADC6" x="-35.56" y="7.62" length="middle"/>
-<pin name="ADC7" x="-35.56" y="5.08" length="middle"/>
-<pin name="USB-5V" x="15.24" y="-27.94" length="middle" direction="pwr" rot="R180"/>
-<pin name="ADC_3V3" x="-35.56" y="25.4" length="middle" direction="pwr"/>
-<pin name="AGND" x="-35.56" y="2.54" length="middle"/>
+<pin name="ADC0" x="-35.56" y="25.4" length="middle"/>
+<pin name="ADC1" x="-35.56" y="22.86" length="middle"/>
+<pin name="ADC2" x="-35.56" y="20.32" length="middle"/>
+<pin name="ADC3" x="-35.56" y="17.78" length="middle"/>
+<pin name="ADC4" x="-35.56" y="15.24" length="middle"/>
+<pin name="ADC5" x="-35.56" y="12.7" length="middle"/>
+<pin name="ADC6" x="-35.56" y="10.16" length="middle"/>
+<pin name="ADC7" x="-35.56" y="7.62" length="middle"/>
+<pin name="USB-5V" x="15.24" y="-33.02" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC-3V" x="-15.24" y="33.02" length="middle" direction="pwr" rot="R270"/>
+<pin name="AGND" x="-35.56" y="5.08" length="middle"/>
 <pin name="CPDGND" x="-10.16" y="-48.26" length="middle" rot="R90"/>
-<pin name="USBGND" x="15.24" y="-35.56" length="middle" rot="R180"/>
+<pin name="USBGND" x="15.24" y="-40.64" length="middle" rot="R180"/>
 <pin name="CDP-3.3V" x="-10.16" y="33.02" length="middle" rot="R270"/>
-<pin name="D-3V" x="-15.24" y="33.02" length="middle" rot="R270"/>
-<pin name="D_P" x="15.24" y="-30.48" length="middle" rot="R180"/>
-<pin name="D_N" x="15.24" y="-33.02" length="middle" rot="R180"/>
-<pin name="TBCLK" x="15.24" y="22.86" length="middle" rot="R180"/>
-<pin name="UCBICLK" x="15.24" y="20.32" length="middle" rot="R180"/>
-<pin name="UART1_RX" x="15.24" y="15.24" length="middle" rot="R180"/>
-<pin name="UART1_TX" x="15.24" y="12.7" length="middle" rot="R180"/>
-<pin name="UART0_RX" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="UART0_TX" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="I2C_SCL" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="I2C_SDA" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="TEMP_PMR" x="-5.08" y="33.02" length="middle" rot="R270"/>
-<pin name="TB2" x="-35.56" y="-12.7" length="middle"/>
-<pin name="TB0" x="-35.56" y="-10.16" length="middle"/>
-<pin name="SPI_CLK" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<pin name="SPI_SIMO" x="15.24" y="-10.16" length="middle" rot="R180"/>
-<pin name="SPI_SOMI" x="15.24" y="-12.7" length="middle" rot="R180"/>
-<pin name="TA1" x="-35.56" y="-5.08" length="middle"/>
-<pin name="TA2" x="-35.56" y="-7.62" length="middle"/>
-<pin name="CAOUT" x="-35.56" y="-20.32" length="middle"/>
-<pin name="CA3" x="-35.56" y="-30.48" length="middle"/>
-<pin name="CA0" x="-35.56" y="-22.86" length="middle"/>
-<pin name="USER_INT" x="15.24" y="-17.78" length="middle" rot="R180"/>
-<pin name="TB3" x="-35.56" y="-15.24" length="middle"/>
-<pin name="BSL_TX" x="-35.56" y="-38.1" length="middle"/>
-<pin name="CA2" x="-35.56" y="-27.94" length="middle"/>
-<pin name="TA0" x="-35.56" y="-2.54" length="middle"/>
-<pin name="BSL_RX" x="-35.56" y="-40.64" length="middle"/>
-<pin name="CA6" x="-35.56" y="-33.02" length="middle"/>
-<pin name="CA1" x="-35.56" y="-25.4" length="middle"/>
-<pin name="ALERT" x="15.24" y="-20.32" length="middle" rot="R180"/>
-<pin name="DGND" x="-15.24" y="-48.26" length="middle" rot="R90"/>
+<pin name="D-3V" x="15.24" y="25.4" length="middle" rot="R180"/>
+<pin name="D_P" x="15.24" y="-35.56" length="middle" rot="R180"/>
+<pin name="D_N" x="15.24" y="-38.1" length="middle" rot="R180"/>
+<pin name="TBCLK" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="UCBICLK" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="UART1_RX" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="UART1_TX" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="UART0_RX" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="UART0_TX" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="I2C_SCL" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="I2C_SDA" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="TMP_PMR" x="-5.08" y="33.02" length="middle" rot="R270"/>
+<pin name="TB2" x="-35.56" y="-10.16" length="middle"/>
+<pin name="TB0" x="-35.56" y="-7.62" length="middle"/>
+<pin name="SPI_CLK" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="SPI_SIMO" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="SPI_SOMI" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="TA1" x="-35.56" y="-2.54" length="middle"/>
+<pin name="TA2" x="-35.56" y="-5.08" length="middle"/>
+<pin name="CAOUT" x="-35.56" y="-17.78" length="middle"/>
+<pin name="CA3" x="-35.56" y="-27.94" length="middle"/>
+<pin name="CA0" x="-35.56" y="-20.32" length="middle"/>
+<pin name="USER_INT" x="15.24" y="-25.4" length="middle" rot="R180"/>
+<pin name="TB3" x="-35.56" y="-12.7" length="middle"/>
+<pin name="BSL_TX" x="-35.56" y="-35.56" length="middle"/>
+<pin name="CA2" x="-35.56" y="-25.4" length="middle"/>
+<pin name="TA0" x="-35.56" y="0" length="middle"/>
+<pin name="BSL_RX" x="-35.56" y="-38.1" length="middle"/>
+<pin name="CA6" x="-35.56" y="-30.48" length="middle"/>
+<pin name="CA1" x="-35.56" y="-22.86" length="middle"/>
+<pin name="ALERT" x="15.24" y="-27.94" length="middle" rot="R180"/>
+<pin name="DGND" x="15.24" y="-20.32" length="middle" rot="R180"/>
 <wire x1="-30.48" y1="27.94" x2="10.16" y2="27.94" width="0.254" layer="94"/>
 <wire x1="10.16" y1="27.94" x2="10.16" y2="-43.18" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-43.18" x2="-30.48" y2="-43.18" width="0.254" layer="94"/>
@@ -24362,8 +24362,7 @@ using ameteur radio standard layout</description>
 <connect gate="G$1" pin="ADC5" pad="A10"/>
 <connect gate="G$1" pin="ADC6" pad="A8"/>
 <connect gate="G$1" pin="ADC7" pad="A6"/>
-<connect gate="G$1" pin="ADC_3V3" pad="A4 A14" route="any"/>
-<connect gate="G$1" pin="AGND" pad="A1 A2 A11 A12" route="any"/>
+<connect gate="G$1" pin="AGND" pad="A1 A2 A11 A12"/>
 <connect gate="G$1" pin="ALERT" pad="C41"/>
 <connect gate="G$1" pin="BSL_RX" pad="C47"/>
 <connect gate="G$1" pin="BSL_TX" pad="C53"/>
@@ -24376,7 +24375,7 @@ using ameteur radio standard layout</description>
 <connect gate="G$1" pin="CDP-3.3V" pad="B20"/>
 <connect gate="G$1" pin="CPDGND" pad="B18"/>
 <connect gate="G$1" pin="D-3V" pad="B22 C40" route="any"/>
-<connect gate="G$1" pin="DGND" pad="B24 C39" route="any"/>
+<connect gate="G$1" pin="DGND" pad="B24 C39"/>
 <connect gate="G$1" pin="D_N" pad="B21"/>
 <connect gate="G$1" pin="D_P" pad="B19"/>
 <connect gate="G$1" pin="I2C_SCL" pad="B26"/>
@@ -24391,7 +24390,7 @@ using ameteur radio standard layout</description>
 <connect gate="G$1" pin="TB2" pad="B30"/>
 <connect gate="G$1" pin="TB3" pad="C42"/>
 <connect gate="G$1" pin="TBCLK" pad="B27"/>
-<connect gate="G$1" pin="TEMP_PMR" pad="B25"/>
+<connect gate="G$1" pin="TMP_PMR" pad="B25"/>
 <connect gate="G$1" pin="UART0_RX" pad="B35"/>
 <connect gate="G$1" pin="UART0_TX" pad="B37"/>
 <connect gate="G$1" pin="UART1_RX" pad="B31"/>
@@ -24400,6 +24399,7 @@ using ameteur radio standard layout</description>
 <connect gate="G$1" pin="USB-5V" pad="A3 A13 B23" route="any"/>
 <connect gate="G$1" pin="USBGND" pad="B17"/>
 <connect gate="G$1" pin="USER_INT" pad="C44"/>
+<connect gate="G$1" pin="VCC-3V" pad="A4 A14" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -24544,7 +24544,7 @@ using ameteur radio standard layout</description>
 <pin name="UART2_TX" x="-63.5" y="-12.7" length="middle"/>
 <pin name="UART2_RX" x="-63.5" y="-15.24" length="middle"/>
 <pin name="BATTERY" x="-35.56" y="22.86" length="middle" rot="R270"/>
-<pin name="SCK" x="-10.16" y="-17.78" length="middle" rot="R180"/>
+<pin name="SCK" x="-10.16" y="-15.24" length="middle" rot="R180"/>
 <pin name="RXD1" x="-63.5" y="-20.32" length="middle"/>
 <pin name="TXD1" x="-63.5" y="-22.86" length="middle"/>
 <pin name="MOSI" x="-10.16" y="-20.32" length="middle" rot="R180"/>
@@ -24564,7 +24564,7 @@ using ameteur radio standard layout</description>
 <devices>
 <device name="" package="WASP">
 <connects>
-<connect gate="G$1" pin="3V3" pad="A10 S2 S19"/>
+<connect gate="G$1" pin="3V3" pad="A10 S2 S19" route="any"/>
 <connect gate="G$1" pin="5V" pad="S22"/>
 <connect gate="G$1" pin="ANALOG" pad="S1"/>
 <connect gate="G$1" pin="ANALOG1" pad="S20"/>
@@ -29304,6 +29304,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="U$2" gate="G$1" pin="DGND"/>
+<wire x1="58.42" y1="152.4" x2="88.9" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="78.74" y1="53.34" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
@@ -29396,14 +29397,14 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="AGND" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="AGND"/>
-<wire x1="38.1" y1="203.2" x2="20.32" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="205.74" x2="20.32" y2="203.2" width="0.1524" layer="91"/>
 <label x="20.32" y="203.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC_3V3" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="D-3V"/>
-<wire x1="58.42" y1="233.68" x2="58.42" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="226.06" x2="58.42" y2="248.92" width="0.1524" layer="91"/>
 <label x="58.42" y="243.84" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
@@ -29444,7 +29445,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="I2C_SCL"/>
-<wire x1="88.9" y1="200.66" x2="109.22" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="198.12" x2="109.22" y2="200.66" width="0.1524" layer="91"/>
 <label x="93.98" y="200.66" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -29461,7 +29462,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="I2C_SDA"/>
-<wire x1="88.9" y1="198.12" x2="109.22" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="195.58" x2="109.22" y2="198.12" width="0.1524" layer="91"/>
 <label x="93.98" y="198.12" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -29473,12 +29474,12 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="SPI_CLK" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="SPI_CLK"/>
-<wire x1="88.9" y1="193.04" x2="109.22" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="190.5" x2="109.22" y2="193.04" width="0.1524" layer="91"/>
 <label x="93.98" y="193.04" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="SCK"/>
-<wire x1="337.82" y1="73.66" x2="358.14" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="76.2" x2="358.14" y2="73.66" width="0.1524" layer="91"/>
 <label x="342.9" y="73.66" size="1.9304" layer="95"/>
 </segment>
 <segment>
@@ -29490,7 +29491,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="SPI_SIMO" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="SPI_SIMO"/>
-<wire x1="88.9" y1="190.5" x2="109.22" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="187.96" x2="109.22" y2="190.5" width="0.1524" layer="91"/>
 <label x="93.98" y="190.5" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -29507,7 +29508,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="SPI_SOMI" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="SPI_SOMI"/>
-<wire x1="88.9" y1="187.96" x2="109.22" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="185.42" x2="109.22" y2="187.96" width="0.1524" layer="91"/>
 <label x="93.98" y="187.96" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -29524,21 +29525,21 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="UART0_RX" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="UART0_RX"/>
-<wire x1="88.9" y1="208.28" x2="109.22" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="205.74" x2="109.22" y2="208.28" width="0.1524" layer="91"/>
 <label x="93.98" y="208.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART0_TX" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="UART0_TX"/>
-<wire x1="88.9" y1="205.74" x2="109.22" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="203.2" x2="109.22" y2="205.74" width="0.1524" layer="91"/>
 <label x="93.98" y="205.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART1_TX" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="UART1_TX"/>
-<wire x1="88.9" y1="213.36" x2="109.22" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="210.82" x2="109.22" y2="213.36" width="0.1524" layer="91"/>
 <label x="93.98" y="213.36" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -29551,7 +29552,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="UART1_RX" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="UART1_RX"/>
-<wire x1="88.9" y1="215.9" x2="109.22" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="213.36" x2="109.22" y2="215.9" width="0.1524" layer="91"/>
 <label x="93.98" y="215.9" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -29641,35 +29642,35 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="CAOUT"/>
-<wire x1="38.1" y1="180.34" x2="20.32" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="182.88" x2="20.32" y2="180.34" width="0.1524" layer="91"/>
 <label x="20.32" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_VCC" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="USB-5V"/>
-<wire x1="88.9" y1="172.72" x2="109.22" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="167.64" x2="109.22" y2="172.72" width="0.1524" layer="91"/>
 <label x="93.98" y="172.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_D+" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="D_P"/>
-<wire x1="88.9" y1="170.18" x2="109.22" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="165.1" x2="109.22" y2="170.18" width="0.1524" layer="91"/>
 <label x="93.98" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_D-" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="D_N"/>
-<wire x1="88.9" y1="167.64" x2="109.22" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="162.56" x2="109.22" y2="167.64" width="0.1524" layer="91"/>
 <label x="93.98" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_GND" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="USBGND"/>
-<wire x1="88.9" y1="165.1" x2="109.22" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="160.02" x2="109.22" y2="165.1" width="0.1524" layer="91"/>
 <label x="93.98" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -29688,13 +29689,13 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="TB0"/>
-<wire x1="38.1" y1="190.5" x2="20.32" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="193.04" x2="20.32" y2="190.5" width="0.1524" layer="91"/>
 <label x="20.32" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RADIO_EN" class="0">
 <segment>
-<wire x1="20.32" y1="187.96" x2="38.1" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="187.96" x2="38.1" y2="190.5" width="0.1524" layer="91"/>
 <label x="20.32" y="187.96" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="TB2"/>
 </segment>
@@ -29702,7 +29703,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="RADIO_INT" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="TA1"/>
-<wire x1="38.1" y1="195.58" x2="20.32" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="198.12" x2="20.32" y2="195.58" width="0.1524" layer="91"/>
 <label x="20.32" y="195.58" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -29714,49 +29715,49 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="ADC_1" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="ADC1"/>
-<wire x1="38.1" y1="220.98" x2="20.32" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="223.52" x2="20.32" y2="220.98" width="0.1524" layer="91"/>
 <label x="20.32" y="220.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_2" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="ADC2"/>
-<wire x1="38.1" y1="218.44" x2="20.32" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="220.98" x2="20.32" y2="218.44" width="0.1524" layer="91"/>
 <label x="20.32" y="218.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_3" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="ADC3"/>
-<wire x1="38.1" y1="215.9" x2="20.32" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="218.44" x2="20.32" y2="215.9" width="0.1524" layer="91"/>
 <label x="20.32" y="215.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_4" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="ADC4"/>
-<wire x1="38.1" y1="213.36" x2="20.32" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="215.9" x2="20.32" y2="213.36" width="0.1524" layer="91"/>
 <label x="20.32" y="213.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_5" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="ADC5"/>
-<wire x1="38.1" y1="210.82" x2="20.32" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="213.36" x2="20.32" y2="210.82" width="0.1524" layer="91"/>
 <label x="20.32" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_6" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="ADC6"/>
-<wire x1="38.1" y1="208.28" x2="20.32" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="210.82" x2="20.32" y2="208.28" width="0.1524" layer="91"/>
 <label x="20.32" y="208.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_7" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="ADC7"/>
-<wire x1="38.1" y1="205.74" x2="20.32" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="208.28" x2="20.32" y2="205.74" width="0.1524" layer="91"/>
 <label x="20.32" y="205.74" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -30032,56 +30033,56 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <net name="ADC_0" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="ADC0"/>
-<wire x1="38.1" y1="223.52" x2="20.32" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="226.06" x2="20.32" y2="223.52" width="0.1524" layer="91"/>
 <label x="20.32" y="223.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIO_2" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="TA0"/>
-<wire x1="38.1" y1="198.12" x2="20.32" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="200.66" x2="20.32" y2="198.12" width="0.1524" layer="91"/>
 <label x="20.32" y="198.12" size="1.9304" layer="95"/>
 </segment>
 </net>
 <net name="DIO_4" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="TA2"/>
-<wire x1="38.1" y1="193.04" x2="20.32" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="195.58" x2="20.32" y2="193.04" width="0.1524" layer="91"/>
 <label x="20.32" y="193.04" size="1.9304" layer="95"/>
 </segment>
 </net>
 <net name="DIO_1" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="TB3"/>
-<wire x1="38.1" y1="185.42" x2="20.32" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="187.96" x2="20.32" y2="185.42" width="0.1524" layer="91"/>
 <label x="20.32" y="185.42" size="1.9304" layer="95"/>
 </segment>
 </net>
 <net name="DIO_3" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="CA0"/>
-<wire x1="38.1" y1="177.8" x2="20.32" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="180.34" x2="20.32" y2="177.8" width="0.1524" layer="91"/>
 <label x="20.32" y="177.8" size="1.9304" layer="95"/>
 </segment>
 </net>
 <net name="DIO_5" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="CA1"/>
-<wire x1="38.1" y1="175.26" x2="20.32" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="177.8" x2="20.32" y2="175.26" width="0.1524" layer="91"/>
 <label x="20.32" y="175.26" size="1.9304" layer="95"/>
 </segment>
 </net>
 <net name="DIO_6" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="CA2"/>
-<wire x1="38.1" y1="172.72" x2="20.32" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="175.26" x2="20.32" y2="172.72" width="0.1524" layer="91"/>
 <label x="20.32" y="172.72" size="1.9304" layer="95"/>
 </segment>
 </net>
 <net name="DIO_7" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="CA3"/>
-<wire x1="38.1" y1="170.18" x2="20.32" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="172.72" x2="20.32" y2="170.18" width="0.1524" layer="91"/>
 <label x="20.32" y="170.18" size="1.9304" layer="95"/>
 </segment>
 </net>
@@ -30914,22 +30915,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <approved hash="206,2,205.74,78.74,UART1_RX_BUF,,,,,"/>
 <approved hash="206,2,172.72,142.24,UART1_RX_BUF,,,,,"/>
 <approved hash="206,2,205.74,226.06,UART1_RX_BUF,,,,,"/>
-<approved hash="113,1,287.342,207.01,LED8,,,,,"/>
-<approved hash="113,1,343.222,207.01,LED14,,,,,"/>
-<approved hash="113,1,353.382,207.01,LED15,,,,,"/>
-<approved hash="113,1,327.982,207.01,LED12,,,,,"/>
-<approved hash="113,1,317.822,207.01,LED11,,,,,"/>
-<approved hash="113,1,307.662,207.01,LED10,,,,,"/>
-<approved hash="113,1,297.502,207.01,LED9,,,,,"/>
-<approved hash="113,1,335.602,207.01,LED13,,,,,"/>
 <approved hash="113,2,178.648,18.1695,JP1,,,,,"/>
-<approved hash="113,1,267.022,207.01,LED6,,,,,"/>
-<approved hash="113,1,277.182,207.01,LED7,,,,,"/>
-<approved hash="113,1,251.782,207.01,LED4,,,,,"/>
-<approved hash="113,1,241.622,207.01,LED3,,,,,"/>
-<approved hash="113,1,231.462,207.01,LED2,,,,,"/>
-<approved hash="113,1,259.402,207.01,LED5,,,,,"/>
-<approved hash="113,1,221.302,207.01,LED1,,,,,"/>
 <approved hash="113,1,63.5,239.247,D1,,,,,"/>
 </errors>
 </schematic>
