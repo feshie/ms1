@@ -30896,10 +30896,18 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <label x="20.32" y="170.18" size="1.9304" layer="95"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="RADIO_!RST" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="CA6"/>
+<wire x1="38.1" y1="167.64" x2="20.32" y2="167.64" width="0.1524" layer="91"/>
+<label x="20.32" y="167.64" size="1.778" layer="95"/>
+</segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="!RESET"/>
 <pinref part="R33" gate="G$1" pin="1"/>
+<wire x1="289.56" y1="185.42" x2="289.56" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="180.34" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
+<label x="261.62" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
