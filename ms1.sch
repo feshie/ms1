@@ -28262,7 +28262,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="JP5" library="pinhead" deviceset="PINHD-1X4" device="" value="A4"/>
 <part name="JP6" library="pinhead" deviceset="PINHD-1X4" device="" value="A5"/>
 <part name="JP7" library="pinhead" deviceset="PINHD-1X4" device="" value="A6"/>
-<part name="JP8" library="pinhead" deviceset="PINHD-1X4" device="" value="A7"/>
 <part name="JP9" library="pinhead" deviceset="PINHD-1X4" device="" value="D1"/>
 <part name="JP10" library="pinhead" deviceset="PINHD-1X4" device="" value="D2"/>
 <part name="JP11" library="pinhead" deviceset="PINHD-1X4" device="" value="D3"/>
@@ -28992,7 +28991,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <junction x="109.22" y="152.4"/>
 </segment>
 </net>
-<net name="ADC_0" class="0">
+<net name="ADC_7" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -29251,7 +29250,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="JP5" gate="A" x="116.84" y="208.28"/>
 <instance part="JP6" gate="A" x="139.7" y="208.28"/>
 <instance part="JP7" gate="A" x="162.56" y="208.28"/>
-<instance part="JP8" gate="A" x="187.96" y="208.28"/>
 <instance part="JP9" gate="A" x="215.9" y="208.28"/>
 <instance part="JP10" gate="A" x="241.3" y="208.28"/>
 <instance part="JP11" gate="A" x="266.7" y="208.28"/>
@@ -29294,8 +29292,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="88.9" y1="226.06" x2="114.3" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="226.06" x2="137.16" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="226.06" x2="160.02" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="226.06" x2="185.42" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="226.06" x2="213.36" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="226.06" x2="213.36" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="226.06" x2="238.76" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="226.06" x2="264.16" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="226.06" x2="289.56" y2="226.06" width="0.1524" layer="91"/>
@@ -29303,9 +29300,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="314.96" y1="226.06" x2="340.36" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="213.36" x2="35.56" y2="226.06" width="0.1524" layer="91"/>
 <junction x="35.56" y="226.06"/>
-<pinref part="JP8" gate="A" pin="1"/>
-<wire x1="185.42" y1="213.36" x2="185.42" y2="226.06" width="0.1524" layer="91"/>
-<junction x="185.42" y="226.06"/>
 <pinref part="JP9" gate="A" pin="1"/>
 <wire x1="213.36" y1="213.36" x2="213.36" y2="226.06" width="0.1524" layer="91"/>
 <junction x="213.36" y="226.06"/>
@@ -29582,26 +29576,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <label x="144.78" y="147.32" size="1.9304" layer="95"/>
 </segment>
 </net>
-<net name="WADC_7" class="0">
-<segment>
-<pinref part="JP8" gate="A" pin="2"/>
-<wire x1="185.42" y1="210.82" x2="167.64" y2="210.82" width="0.1524" layer="91"/>
-<label x="167.64" y="210.82" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ADC_7" class="0">
-<segment>
-<pinref part="JP8" gate="A" pin="3"/>
-<wire x1="185.42" y1="208.28" x2="167.64" y2="208.28" width="0.1524" layer="91"/>
-<label x="167.64" y="208.28" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="HADC_7" class="0">
-<segment>
-<pinref part="JP8" gate="A" pin="4"/>
-<wire x1="185.42" y1="205.74" x2="167.64" y2="205.74" width="0.1524" layer="91"/>
-<label x="167.64" y="205.74" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="J15" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="147.32" x2="167.64" y2="147.32" width="0.1524" layer="91"/>
@@ -30839,34 +30814,6 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <label x="210.82" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ADC_0" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="ADC0"/>
-<wire x1="38.1" y1="223.52" x2="20.32" y2="223.52" width="0.1524" layer="91"/>
-<label x="20.32" y="223.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DIO_2" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="TA0"/>
-<wire x1="38.1" y1="198.12" x2="20.32" y2="198.12" width="0.1524" layer="91"/>
-<label x="20.32" y="198.12" size="1.9304" layer="95"/>
-</segment>
-</net>
-<net name="DIO_4" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="TA2"/>
-<wire x1="38.1" y1="193.04" x2="20.32" y2="193.04" width="0.1524" layer="91"/>
-<label x="20.32" y="193.04" size="1.9304" layer="95"/>
-</segment>
-</net>
-<net name="DIO_1" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="TB3"/>
-<wire x1="38.1" y1="185.42" x2="20.32" y2="185.42" width="0.1524" layer="91"/>
-<label x="20.32" y="185.42" size="1.9304" layer="95"/>
-</segment>
-</net>
 <net name="DIO_3" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="CA0"/>
@@ -30901,6 +30848,18 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <wire x1="289.56" y1="180.34" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
 <label x="261.62" y="180.34" size="1.778" layer="95"/>
 <junction x="289.56" y="185.42"/>
+</segment>
+</net>
+<net name="RADIO_CCA_STATUS" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="GPIO3"/>
+<wire x1="327.66" y1="193.04" x2="350.52" y2="193.04" width="0.1524" layer="91"/>
+<label x="342.9" y="193.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="TB3"/>
+<wire x1="38.1" y1="185.42" x2="5.08" y2="185.42" width="0.1524" layer="91"/>
+<label x="5.08" y="185.42" size="1.9304" layer="95"/>
 </segment>
 </net>
 </nets>
