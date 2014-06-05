@@ -28273,14 +28273,12 @@ Source: coiltronics_dr_series.pdf</description>
 <part name="X1" library="con-kycon" deviceset="KUSBVX-BS1N" device=""/>
 <part name="J9" library="farnell-parts" deviceset="5-PIN-MOLEX" device="" value="TTL_SERIAL"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="R7" library="resistor" deviceset="R-EU_" device="R0805" value="TEST"/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="R0805" value="51K"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="R0805" value="100K"/>
 <part name="C5" library="resistor" deviceset="C-EU" device="C0805" value="1uF"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="R0805" value="100K"/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="R0805" value="100K"/>
-<part name="R31" library="resistor" deviceset="R-EU_" device="R0805" value="TEST"/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="Q1" library="farnell-parts" deviceset="DMG6602SVT" device=""/>
 <part name="Q2" library="farnell-parts" deviceset="DMG6602SVT" device=""/>
@@ -28365,6 +28363,10 @@ Source: coiltronics_dr_series.pdf</description>
 <part name="AGND" library="testpad" deviceset="TP" device="B2,54"/>
 <part name="C26" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="R33" library="resistor" deviceset="R-EU_" device="R0805" value="1K"/>
+<part name="C27" library="resistor" deviceset="C-EU" device="C0805"/>
+<part name="C28" library="resistor" deviceset="CPOL-EU" device="B/3528-21R"/>
+<part name="JP8" library="SparkFun-Passives" deviceset="JUMPER-2" device="SMD-NO"/>
+<part name="JP16" library="SparkFun-Passives" deviceset="JUMPER-2" device="SMD-NO"/>
 </parts>
 <sheets>
 <sheet>
@@ -28478,14 +28480,12 @@ Source: coiltronics_dr_series.pdf</description>
 <instance part="GND7" gate="1" x="152.4" y="134.62"/>
 <instance part="Q3" gate="G$1" x="154.94" y="149.86"/>
 <instance part="Q3" gate="G$2" x="160.02" y="162.56"/>
-<instance part="R7" gate="G$1" x="119.38" y="152.4" rot="R180"/>
 <instance part="R4" gate="G$1" x="165.1" y="205.74" rot="R90"/>
 <instance part="R3" gate="G$1" x="165.1" y="215.9" rot="R90"/>
 <instance part="C5" gate="G$1" x="175.26" y="205.74"/>
 <instance part="GND11" gate="1" x="144.78" y="198.12"/>
 <instance part="R1" gate="G$1" x="139.7" y="208.28" rot="R90"/>
 <instance part="R2" gate="G$1" x="147.32" y="233.68" rot="R90"/>
-<instance part="R31" gate="G$1" x="353.06" y="60.96" rot="R180"/>
 <instance part="P+2" gate="VCC" x="27.94" y="177.8"/>
 <instance part="Q1" gate="G$1" x="144.78" y="215.9"/>
 <instance part="Q1" gate="G$2" x="149.86" y="226.06"/>
@@ -28514,6 +28514,10 @@ Source: coiltronics_dr_series.pdf</description>
 <instance part="L7" gate="G$1" x="180.34" y="154.94" rot="R270"/>
 <instance part="L8" gate="G$1" x="180.34" y="147.32" rot="R270"/>
 <instance part="AGND" gate="G$1" x="83.82" y="205.74"/>
+<instance part="C27" gate="G$1" x="342.9" y="55.88"/>
+<instance part="C28" gate="G$1" x="350.52" y="55.88"/>
+<instance part="JP8" gate="A" x="358.14" y="63.5"/>
+<instance part="JP16" gate="A" x="121.92" y="149.86" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -28589,6 +28593,13 @@ Source: coiltronics_dr_series.pdf</description>
 <wire x1="332.74" y1="48.26" x2="332.74" y2="50.8" width="0.1524" layer="91"/>
 <junction x="332.74" y="48.26"/>
 <junction x="320.04" y="48.26"/>
+<pinref part="C28" gate="G$1" pin="-"/>
+<wire x1="332.74" y1="48.26" x2="342.9" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="48.26" x2="350.52" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="48.26" x2="350.52" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="2"/>
+<wire x1="342.9" y1="50.8" x2="342.9" y2="48.26" width="0.1524" layer="91"/>
+<junction x="342.9" y="48.26"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="60.96" x2="231.14" y2="53.34" width="0.1524" layer="91"/>
@@ -28857,7 +28868,6 @@ Source: coiltronics_dr_series.pdf</description>
 </net>
 <net name="VCC_3V3" class="0">
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="Q3" gate="G$2" pin="S"/>
 <wire x1="162.56" y1="167.64" x2="162.56" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="175.26" x2="162.56" y2="175.26" width="0.1524" layer="91"/>
@@ -28874,6 +28884,8 @@ Source: coiltronics_dr_series.pdf</description>
 <wire x1="317.5" y1="175.26" x2="162.56" y2="175.26" width="0.1524" layer="91"/>
 <junction x="162.56" y="175.26"/>
 <junction x="317.5" y="175.26"/>
+<pinref part="JP16" gate="A" pin="1"/>
+<wire x1="121.92" y1="152.4" x2="124.46" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="297.18" y1="226.06" x2="297.18" y2="243.84" width="0.1524" layer="91"/>
@@ -28968,9 +28980,9 @@ Source: coiltronics_dr_series.pdf</description>
 <pinref part="R25" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="R31" gate="G$1" pin="1"/>
-<wire x1="358.14" y1="60.96" x2="370.84" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="60.96" x2="370.84" y2="60.96" width="0.1524" layer="91"/>
 <label x="363.22" y="60.96" size="1.778" layer="95"/>
+<pinref part="JP8" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -29041,12 +29053,13 @@ Source: coiltronics_dr_series.pdf</description>
 <wire x1="106.68" y1="152.4" x2="109.22" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="149.86" x2="109.22" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="+"/>
-<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="152.4" x2="109.22" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="VCC_3V" gate="G$1" pin="TP"/>
 <wire x1="114.3" y1="152.4" x2="114.3" y2="157.48" width="0.1524" layer="91"/>
-<junction x="114.3" y="152.4"/>
 <junction x="109.22" y="152.4"/>
+<pinref part="JP16" gate="A" pin="2"/>
+<wire x1="119.38" y1="152.4" x2="114.3" y2="152.4" width="0.1524" layer="91"/>
+<junction x="114.3" y="152.4"/>
 </segment>
 </net>
 <net name="ADC_7" class="0">
@@ -29088,10 +29101,16 @@ Source: coiltronics_dr_series.pdf</description>
 <wire x1="332.74" y1="60.96" x2="332.74" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="5V" gate="G$1" pin="TP"/>
 <wire x1="332.74" y1="60.96" x2="342.9" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="342.9" y1="60.96" x2="347.98" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="60.96" x2="350.52" y2="60.96" width="0.1524" layer="91"/>
 <junction x="332.74" y="60.96"/>
 <junction x="342.9" y="60.96"/>
+<pinref part="C27" gate="G$1" pin="1"/>
+<wire x1="342.9" y1="60.96" x2="342.9" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="C28" gate="G$1" pin="+"/>
+<wire x1="350.52" y1="58.42" x2="350.52" y2="60.96" width="0.1524" layer="91"/>
+<junction x="350.52" y="60.96"/>
+<pinref part="JP8" gate="A" pin="1"/>
+<wire x1="358.14" y1="60.96" x2="350.52" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
