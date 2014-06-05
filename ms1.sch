@@ -28122,6 +28122,64 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="inductors">
+<description>&lt;b&gt;Inductors and Filters&lt;/b&gt;&lt;p&gt;
+Based on the previous library ind-a.lbr&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DR127">
+<description>&lt;b&gt;High Power Density, High Efficiency, Shielded Inductors&lt;/b&gt;&lt;p&gt;
+Source: coiltronics_dr_series.pdf</description>
+<wire x1="-6.5" y1="6.5" x2="6.525" y2="6.5" width="0.2032" layer="21"/>
+<wire x1="6.525" y1="6.5" x2="6.525" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="6.525" y1="-6.5" x2="-6.5" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="-6.5" y1="-6.5" x2="-6.5" y2="6.5" width="0.2032" layer="21"/>
+<wire x1="-4.5254" y1="3.783" x2="-3.8006" y2="4.5431" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="-3.783" y1="-4.5254" x2="-4.5431" y2="-3.8006" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="4.5254" y1="-3.783" x2="3.8006" y2="-4.5431" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="3.783" y1="4.5254" x2="4.5431" y2="3.8006" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="0" y1="5.9" x2="4.9" y2="3.275" width="0.2032" layer="21" curve="-56.209779"/>
+<wire x1="0" y1="5.9" x2="-4.95" y2="3.225" width="0.2032" layer="21" curve="56.95663"/>
+<wire x1="0" y1="-5.9" x2="-4.9" y2="-3.275" width="0.2032" layer="21" curve="-56.209779"/>
+<wire x1="0" y1="-5.9" x2="4.95" y2="-3.225" width="0.2032" layer="21" curve="56.95663"/>
+<circle x="0" y="0" radius="5.9" width="0.2032" layer="51"/>
+<smd name="1" x="-4.975" y="0" dx="3.85" dy="5.5" layer="1"/>
+<smd name="2" x="4.975" y="0" dx="3.85" dy="5.5" layer="1"/>
+<text x="-2.5" y="3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="DRK">
+<wire x1="-3.81" y1="1.651" x2="3.81" y2="1.651" width="0.254" layer="94"/>
+<text x="-3.81" y="2.286" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.937" y="-3.048" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-3.81" y1="-0.889" x2="3.81" y2="0.889" layer="94"/>
+<pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DR127" prefix="L">
+<description>&lt;b&gt;High Power Density, High Efficiency, Shielded Inductors&lt;/b&gt;&lt;p&gt;
+Source: coiltronics_dr_series.pdf</description>
+<gates>
+<gate name="G$1" symbol="DRK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DR127">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -28182,7 +28240,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <part name="R24" library="resistor" deviceset="R-EU_" device="R0805" value="332K"/>
 <part name="R23" library="resistor" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="C10" library="resistor" deviceset="C-EU" device="C0805" value="10pF"/>
-<part name="L5" library="farnell-parts" deviceset="SRU1048" device="" value="68uH"/>
+<part name="L5" library="inductors" deviceset="DR127" device="" value="68uH"/>
 <part name="C11" library="rcl" deviceset="CPOL-EU" device="E" value="68uF"/>
 <part name="D5" library="diode" deviceset="MBR0520LT" device="" value="MBR0540"/>
 <part name="L6" library="rcl" deviceset="L-EU" device="6000-XXX-RC" value="20uH"/>
@@ -28397,7 +28455,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <instance part="R24" gate="G$1" x="312.42" y="53.34" rot="R90"/>
 <instance part="R23" gate="G$1" x="312.42" y="66.04" rot="R90"/>
 <instance part="C10" gate="G$1" x="302.26" y="66.04"/>
-<instance part="L5" gate="A" x="307.34" y="76.2"/>
+<instance part="L5" gate="G$1" x="307.34" y="76.2"/>
 <instance part="C11" gate="G$1" x="320.04" y="53.34"/>
 <instance part="D5" gate="G$1" x="307.34" y="83.82" smashed="yes" rot="R180">
 <attribute name="NAME" x="304.8" y="86.8426" size="1.778" layer="95"/>
@@ -28840,7 +28898,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <pinref part="U2" gate="A" pin="SW"/>
 <pinref part="C9" gate="G$1" pin="2"/>
 <pinref part="D4" gate="G$1" pin="C"/>
-<pinref part="L5" gate="A" pin="P$1"/>
+<pinref part="L5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -28884,7 +28942,7 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <junction x="320.04" y="60.96"/>
 <pinref part="C11" gate="G$1" pin="+"/>
 <pinref part="D5" gate="G$1" pin="A"/>
-<pinref part="L5" gate="A" pin="P$2"/>
+<pinref part="L5" gate="G$1" pin="2"/>
 <pinref part="R23" gate="G$1" pin="2"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 <pinref part="L6" gate="G$1" pin="1"/>

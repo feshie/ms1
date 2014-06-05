@@ -1238,6 +1238,34 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="inductors">
+<description>&lt;b&gt;Inductors and Filters&lt;/b&gt;&lt;p&gt;
+Based on the previous library ind-a.lbr&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DR127">
+<description>&lt;b&gt;High Power Density, High Efficiency, Shielded Inductors&lt;/b&gt;&lt;p&gt;
+Source: coiltronics_dr_series.pdf</description>
+<wire x1="-6.5" y1="6.5" x2="6.525" y2="6.5" width="0.2032" layer="21"/>
+<wire x1="6.525" y1="6.5" x2="6.525" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="6.525" y1="-6.5" x2="-6.5" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="-6.5" y1="-6.5" x2="-6.5" y2="6.5" width="0.2032" layer="21"/>
+<wire x1="-4.5254" y1="3.783" x2="-3.8006" y2="4.5431" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="-3.783" y1="-4.5254" x2="-4.5431" y2="-3.8006" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="4.5254" y1="-3.783" x2="3.8006" y2="-4.5431" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="3.783" y1="4.5254" x2="4.5431" y2="3.8006" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="0" y1="5.9" x2="4.9" y2="3.275" width="0.2032" layer="21" curve="-56.209779"/>
+<wire x1="0" y1="5.9" x2="-4.95" y2="3.225" width="0.2032" layer="21" curve="56.95663"/>
+<wire x1="0" y1="-5.9" x2="-4.9" y2="-3.275" width="0.2032" layer="21" curve="-56.209779"/>
+<wire x1="0" y1="-5.9" x2="4.95" y2="-3.225" width="0.2032" layer="21" curve="56.95663"/>
+<circle x="0" y="0" radius="5.9" width="0.2032" layer="51"/>
+<smd name="1" x="-4.975" y="0" dx="3.85" dy="5.5" layer="1"/>
+<smd name="2" x="4.975" y="0" dx="3.85" dy="5.5" layer="1"/>
+<text x="-2.5" y="3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1532,7 +1560,7 @@ design rules under a new name.</description>
 <element name="C10" library="resistor" package="C0805" value="10pF" x="123.825" y="91.694" smashed="yes" rot="R180">
 <attribute name="NAME" x="121.285" y="92.202" size="1.27" layer="25" rot="R180"/>
 </element>
-<element name="L5" library="farnell-parts" package="1048" value="68uH" x="135.128" y="87.376" smashed="yes">
+<element name="L5" library="inductors" package="DR127" value="68uH" x="135.128" y="87.376" smashed="yes">
 <attribute name="NAME" x="134.522" y="88.612" size="1.27" layer="25" ratio="10"/>
 </element>
 <element name="C11" library="rcl" package="PANASONIC_E" value="68uF" x="127.635" y="80.391" smashed="yes" rot="R90">
@@ -2272,7 +2300,7 @@ design rules under a new name.</description>
 <wire x1="125.2728" y1="87.0458" x2="125.2846" y2="87.034" width="0.6096" layer="1"/>
 <wire x1="125.2846" y1="87.034" x2="127.635" y2="87.034" width="0.6096" layer="1"/>
 <wire x1="127.635" y1="87.034" x2="127.977" y2="87.376" width="0.6096" layer="1"/>
-<wire x1="127.977" y1="87.376" x2="130.628" y2="87.376" width="0.6096" layer="1"/>
+<wire x1="127.977" y1="87.376" x2="130.153" y2="87.376" width="0.6096" layer="1"/>
 <wire x1="125.2728" y1="87.0458" x2="125.349" y2="86.9696" width="0.6096" layer="1"/>
 <wire x1="125.349" y1="86.9696" x2="125.349" y2="85.979" width="0.6096" layer="1"/>
 <wire x1="125.349" y1="85.979" x2="123.947" y2="84.577" width="0.6096" layer="1"/>
@@ -2316,7 +2344,7 @@ design rules under a new name.</description>
 <wire x1="132.715" y1="87.63" x2="132.715" y2="90.043" width="0.6096" layer="1"/>
 <wire x1="132.715" y1="90.043" x2="130.937" y2="91.821" width="0.6096" layer="1"/>
 <wire x1="130.937" y1="91.821" x2="130.678" y2="91.821" width="0.6096" layer="1"/>
-<wire x1="139.628" y1="87.376" x2="139.374" y2="87.63" width="0.6096" layer="1"/>
+<wire x1="140.103" y1="87.376" x2="139.374" y2="87.63" width="0.6096" layer="1"/>
 <wire x1="139.374" y1="87.63" x2="132.715" y2="87.63" width="0.6096" layer="1"/>
 <wire x1="139.374" y1="87.63" x2="140.756" y2="89.012" width="0.6096" layer="1"/>
 <wire x1="140.756" y1="89.012" x2="140.756" y2="93.599" width="0.6096" layer="1"/>
