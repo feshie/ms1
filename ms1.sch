@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -28188,6 +28188,12 @@ Source: coiltronics_dr_series.pdf</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="usb" width="0.3048" drill="0.3556">
+<clearance class="1" value="0.1524"/>
+</class>
+<class number="2" name="rs485" width="0.3048" drill="0.3556">
+<clearance class="2" value="0.3048"/>
+</class>
 </classes>
 <parts>
 <part name="GND60" library="supply1" deviceset="GND" device=""/>
@@ -29993,14 +29999,14 @@ Source: coiltronics_dr_series.pdf</description>
 <label x="55.88" y="86.36" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
-<net name="USB_D-" class="0">
+<net name="USB_D_N" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="83.82" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
 <label x="55.88" y="83.82" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
-<net name="USB_D+" class="0">
+<net name="USB_D_P" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="3"/>
 <wire x1="40.64" y1="81.28" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
@@ -30356,8 +30362,8 @@ Source: coiltronics_dr_series.pdf</description>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="SCK"/>
-<wire x1="337.82" y1="76.2" x2="358.14" y2="73.66" width="0.1524" layer="91"/>
-<label x="342.9" y="73.66" size="1.9304" layer="95"/>
+<wire x1="337.82" y1="76.2" x2="358.14" y2="76.2" width="0.1524" layer="91"/>
+<label x="342.9" y="76.2" size="1.9304" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="SCLK"/>
@@ -30535,14 +30541,14 @@ Source: coiltronics_dr_series.pdf</description>
 <label x="93.98" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="USB_D+" class="0">
+<net name="USB_D_P" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="D_P"/>
 <wire x1="88.9" y1="162.56" x2="109.22" y2="162.56" width="0.1524" layer="91"/>
 <label x="93.98" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="USB_D-" class="0">
+<net name="USB_D_N" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="D_N"/>
 <wire x1="88.9" y1="160.02" x2="109.22" y2="160.02" width="0.1524" layer="91"/>
@@ -30741,7 +30747,7 @@ Source: coiltronics_dr_series.pdf</description>
 <label x="264.16" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BZ" class="0">
+<net name="RS485_N" class="2">
 <segment>
 <wire x1="205.74" y1="71.12" x2="226.06" y2="71.12" width="0.1524" layer="91"/>
 <label x="210.82" y="71.12" size="1.778" layer="95"/>
@@ -30904,7 +30910,7 @@ Source: coiltronics_dr_series.pdf</description>
 <pinref part="C23" gate="G$1" pin="+"/>
 </segment>
 </net>
-<net name="AY" class="0">
+<net name="RS485_P" class="2">
 <segment>
 <pinref part="U4" gate="A" pin="A/Y"/>
 <pinref part="J5" gate="G$1" pin="3"/>
