@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -24469,143 +24469,6 @@ using ameteur radio standard layout</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="wasp">
-<packages>
-<package name="WASP">
-<pad name="S1" x="-33.02" y="12.7" drill="0.8"/>
-<pad name="S2" x="-30.48" y="12.7" drill="0.8"/>
-<pad name="S3" x="-33.02" y="10.16" drill="0.8"/>
-<pad name="S4" x="-30.48" y="10.16" drill="0.8" shape="square"/>
-<pad name="S5" x="-33.02" y="7.62" drill="0.8"/>
-<pad name="S6" x="-30.48" y="7.62" drill="0.8"/>
-<pad name="S7" x="-33.02" y="5.08" drill="0.8"/>
-<pad name="S8" x="-30.48" y="5.08" drill="0.8"/>
-<pad name="S9" x="-33.02" y="2.54" drill="0.8"/>
-<pad name="S10" x="-30.48" y="2.54" drill="0.8"/>
-<pad name="S11" x="-33.02" y="0" drill="0.8"/>
-<pad name="S12" x="-30.48" y="0" drill="0.8"/>
-<pad name="S13" x="-33.02" y="-2.54" drill="0.8"/>
-<pad name="S14" x="-30.48" y="-2.54" drill="0.8"/>
-<pad name="S15" x="-33.02" y="-5.08" drill="0.8"/>
-<pad name="S16" x="-30.48" y="-5.08" drill="0.8"/>
-<pad name="S17" x="-33.02" y="-7.62" drill="0.8"/>
-<pad name="S18" x="-30.48" y="-7.62" drill="0.8"/>
-<pad name="S19" x="-33.02" y="-10.16" drill="0.8"/>
-<pad name="S20" x="-30.48" y="-10.16" drill="0.8"/>
-<pad name="S21" x="-33.02" y="-12.7" drill="0.8"/>
-<pad name="S22" x="-30.48" y="-12.7" drill="0.8"/>
-<pad name="S23" x="-33.02" y="-15.24" drill="0.8"/>
-<pad name="S24" x="-30.48" y="-15.24" drill="0.8"/>
-<pad name="A1" x="10.16" y="15.24" drill="0.8" rot="R180"/>
-<pad name="A2" x="10.16" y="12.7" drill="0.8" rot="R180"/>
-<pad name="A3" x="10.16" y="10.16" drill="0.8" rot="R180"/>
-<pad name="A4" x="10.16" y="7.62" drill="0.8" rot="R180"/>
-<pad name="A5" x="10.16" y="5.08" drill="0.8" rot="R180"/>
-<pad name="A6" x="10.16" y="2.54" drill="0.8" rot="R180"/>
-<pad name="A7" x="10.16" y="0" drill="0.8" rot="R180"/>
-<pad name="A8" x="10.16" y="-2.54" drill="0.8" rot="R180"/>
-<pad name="A9" x="10.16" y="-5.08" drill="0.8" rot="R180"/>
-<pad name="A10" x="10.16" y="-7.62" drill="0.8" rot="R180"/>
-<pad name="A11" x="10.16" y="-10.16" drill="0.8" rot="R180"/>
-<pad name="A12" x="10.16" y="-12.7" drill="0.8" rot="R180"/>
-<wire x1="-35.56" y1="-34.32" x2="38.44" y2="-34.32" width="0.127" layer="21"/>
-<wire x1="38.44" y1="-34.32" x2="38.44" y2="17.68" width="0.127" layer="21"/>
-<wire x1="38.44" y1="17.68" x2="-35.56" y2="17.68" width="0.127" layer="21"/>
-<wire x1="-35.56" y1="17.68" x2="-35.56" y2="-34.32" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="WASPMOTE-SENSOR-BOARD">
-<pin name="ANALOG" x="-63.5" y="15.24" length="middle"/>
-<pin name="DIGITAL8" x="-10.16" y="12.7" length="middle" rot="R180"/>
-<pin name="DIGITAL6" x="-10.16" y="7.62" length="middle" rot="R180"/>
-<pin name="DIGITAL4" x="-10.16" y="2.54" length="middle" rot="R180"/>
-<pin name="DIGITAL2" x="-10.16" y="-2.54" length="middle" rot="R180"/>
-<pin name="RESERVED" x="-30.48" y="-30.48" length="middle" rot="R90"/>
-<pin name="ANALOG6" x="-63.5" y="10.16" length="middle"/>
-<pin name="ANALOG4" x="-63.5" y="5.08" length="middle"/>
-<pin name="ANALOG2" x="-63.5" y="0" length="middle"/>
-<pin name="3V3" x="-38.1" y="22.86" length="middle" rot="R270"/>
-<pin name="GPS-POWER" x="-40.64" y="22.86" length="middle" rot="R270"/>
-<pin name="SDA" x="-10.16" y="-10.16" length="middle" rot="R180"/>
-<pin name="DIGITAL7" x="-10.16" y="10.16" length="middle" rot="R180"/>
-<pin name="GND" x="-40.64" y="-30.48" length="middle" rot="R90"/>
-<pin name="DIGITAL5" x="-10.16" y="5.08" length="middle" rot="R180"/>
-<pin name="DIGITAL3" x="-10.16" y="0" length="middle" rot="R180"/>
-<pin name="DIGITAL1" x="-10.16" y="-5.08" length="middle" rot="R180"/>
-<pin name="ANALOG7" x="-63.5" y="12.7" length="middle"/>
-<pin name="ANALOG5" x="-63.5" y="7.62" length="middle"/>
-<pin name="ANALOG3" x="-63.5" y="2.54" length="middle"/>
-<pin name="ANALOG1" x="-63.5" y="-2.54" length="middle"/>
-<pin name="5V" x="-33.02" y="22.86" length="middle" rot="R270"/>
-<pin name="SCL" x="-10.16" y="-12.7" length="middle" rot="R180"/>
-<pin name="UART1_TX" x="-63.5" y="-7.62" length="middle"/>
-<pin name="UART1_RX" x="-63.5" y="-10.16" length="middle"/>
-<pin name="UART2_TX" x="-63.5" y="-12.7" length="middle"/>
-<pin name="UART2_RX" x="-63.5" y="-15.24" length="middle"/>
-<pin name="BATTERY" x="-35.56" y="22.86" length="middle" rot="R270"/>
-<pin name="SCK" x="-10.16" y="-15.24" length="middle" rot="R180"/>
-<pin name="RXD1" x="-63.5" y="-20.32" length="middle"/>
-<pin name="TXD1" x="-63.5" y="-22.86" length="middle"/>
-<pin name="MOSI" x="-10.16" y="-20.32" length="middle" rot="R180"/>
-<pin name="MISO" x="-10.16" y="-22.86" length="middle" rot="R180"/>
-<wire x1="-58.42" y1="17.78" x2="-15.24" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="17.78" x2="-15.24" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-25.4" x2="-58.42" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="-58.42" y1="-25.4" x2="-58.42" y2="17.78" width="0.254" layer="94"/>
-<text x="-53.34" y="20.32" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="WASP">
-<gates>
-<gate name="G$1" symbol="WASPMOTE-SENSOR-BOARD" x="38.1" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="WASP">
-<connects>
-<connect gate="G$1" pin="3V3" pad="A10 S2 S19" route="any"/>
-<connect gate="G$1" pin="5V" pad="S22"/>
-<connect gate="G$1" pin="ANALOG" pad="S1"/>
-<connect gate="G$1" pin="ANALOG1" pad="S20"/>
-<connect gate="G$1" pin="ANALOG2" pad="S17"/>
-<connect gate="G$1" pin="ANALOG3" pad="S18"/>
-<connect gate="G$1" pin="ANALOG4" pad="S15"/>
-<connect gate="G$1" pin="ANALOG5" pad="S16"/>
-<connect gate="G$1" pin="ANALOG6" pad="S13"/>
-<connect gate="G$1" pin="ANALOG7" pad="S14"/>
-<connect gate="G$1" pin="BATTERY" pad="A5"/>
-<connect gate="G$1" pin="DIGITAL1" pad="S12"/>
-<connect gate="G$1" pin="DIGITAL2" pad="S9"/>
-<connect gate="G$1" pin="DIGITAL3" pad="S10"/>
-<connect gate="G$1" pin="DIGITAL4" pad="S7"/>
-<connect gate="G$1" pin="DIGITAL5" pad="S8"/>
-<connect gate="G$1" pin="DIGITAL6" pad="S5"/>
-<connect gate="G$1" pin="DIGITAL7" pad="S6"/>
-<connect gate="G$1" pin="DIGITAL8" pad="S3"/>
-<connect gate="G$1" pin="GND" pad="A6 S4"/>
-<connect gate="G$1" pin="GPS-POWER" pad="S21"/>
-<connect gate="G$1" pin="MISO" pad="A12"/>
-<connect gate="G$1" pin="MOSI" pad="A11"/>
-<connect gate="G$1" pin="RESERVED" pad="S11"/>
-<connect gate="G$1" pin="RXD1" pad="A8"/>
-<connect gate="G$1" pin="SCK" pad="A7"/>
-<connect gate="G$1" pin="SCL" pad="S24"/>
-<connect gate="G$1" pin="SDA" pad="S23"/>
-<connect gate="G$1" pin="TXD1" pad="A9"/>
-<connect gate="G$1" pin="UART1_RX" pad="A2"/>
-<connect gate="G$1" pin="UART1_TX" pad="A1"/>
-<connect gate="G$1" pin="UART2_RX" pad="A4"/>
-<connect gate="G$1" pin="UART2_TX" pad="A3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="CC11x">
 <packages>
 <package name="CC1120-HEADERS-SMT">
@@ -28266,8 +28129,6 @@ Source: coiltronics_dr_series.pdf</description>
 <part name="C13" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="U$1" library="gumsense" deviceset="BUTTON_CELL_NEW" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="U$4" library="wasp" deviceset="WASP" device=""/>
-<part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="J7" library="farnell-parts" deviceset="5-PIN-MOLEX" device="" value="I2C"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="RADIO_VCC" library="testpad" deviceset="TP" device="B2,54" value="TPB2,54"/>
@@ -30107,7 +29968,6 @@ Source: coiltronics_dr_series.pdf</description>
 <description>ICs</description>
 <plain>
 <text x="30.48" y="111.76" size="1.9304" layer="104">ANA0 &amp; ANA7 are attached to dividers on the Z1 to enable 5V input</text>
-<text x="345.44" y="111.76" size="1.9304" layer="95">Check DIGITAL8 isn't needed</text>
 <wire x1="5.08" y1="104.14" x2="144.78" y2="104.14" width="0.6096" layer="95"/>
 <wire x1="144.78" y1="104.14" x2="144.78" y2="45.72" width="0.6096" layer="95"/>
 <text x="71.12" y="91.44" size="6.4516" layer="95">RTC</text>
@@ -30116,7 +29976,6 @@ Source: coiltronics_dr_series.pdf</description>
 <wire x1="241.3" y1="154.94" x2="241.3" y2="256.54" width="0.6096" layer="95"/>
 <text x="294.64" y="243.84" size="6.4516" layer="95">Radio</text>
 <wire x1="241.3" y1="154.94" x2="241.3" y2="45.72" width="0.6096" layer="95"/>
-<text x="281.94" y="142.24" size="6.4516" layer="95">WASP BOARD</text>
 <text x="160.02" y="27.94" size="6.4516" layer="95">BatV / Sense Link</text>
 <wire x1="241.3" y1="45.72" x2="241.3" y2="5.08" width="0.6096" layer="95"/>
 <wire x1="144.78" y1="45.72" x2="241.3" y2="45.72" width="0.6096" layer="95"/>
@@ -30135,8 +29994,6 @@ Source: coiltronics_dr_series.pdf</description>
 <instance part="U3" gate="A" x="96.52" y="53.34"/>
 <instance part="GND59" gate="1" x="78.74" y="27.94"/>
 <instance part="C13" gate="G$1" x="58.42" y="45.72" rot="R180"/>
-<instance part="U$4" gate="G$1" x="347.98" y="91.44"/>
-<instance part="GND3" gate="1" x="307.34" y="58.42"/>
 <instance part="U$3" gate="G$1" x="307.34" y="203.2"/>
 <instance part="JP1" gate="A" x="177.8" y="17.78" rot="R90"/>
 <instance part="U4" gate="A" x="187.96" y="73.66"/>
@@ -30211,10 +30068,6 @@ Source: coiltronics_dr_series.pdf</description>
 <pinref part="U3" gate="A" pin="GND"/>
 <pinref part="GND59" gate="1" pin="GND"/>
 <pinref part="C13" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="GND"/>
-<pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="63.5" x2="165.1" y2="60.96" width="0.1524" layer="91"/>
@@ -30331,11 +30184,6 @@ Source: coiltronics_dr_series.pdf</description>
 <wire x1="88.9" y1="195.58" x2="109.22" y2="195.58" width="0.1524" layer="91"/>
 <label x="93.98" y="195.58" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="SCL"/>
-<wire x1="337.82" y1="78.74" x2="358.14" y2="78.74" width="0.1524" layer="91"/>
-<label x="342.9" y="78.74" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -30348,22 +30196,12 @@ Source: coiltronics_dr_series.pdf</description>
 <wire x1="88.9" y1="193.04" x2="109.22" y2="193.04" width="0.1524" layer="91"/>
 <label x="93.98" y="193.04" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="SDA"/>
-<wire x1="337.82" y1="81.28" x2="358.14" y2="81.28" width="0.1524" layer="91"/>
-<label x="342.9" y="81.28" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SPI_CLK" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="SPI_CLK"/>
 <wire x1="88.9" y1="187.96" x2="109.22" y2="187.96" width="0.1524" layer="91"/>
 <label x="93.98" y="187.96" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="SCK"/>
-<wire x1="337.82" y1="76.2" x2="358.14" y2="76.2" width="0.1524" layer="91"/>
-<label x="342.9" y="76.2" size="1.9304" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="SCLK"/>
@@ -30382,11 +30220,6 @@ Source: coiltronics_dr_series.pdf</description>
 <wire x1="289.56" y1="208.28" x2="271.78" y2="208.28" width="0.1524" layer="91"/>
 <label x="271.78" y="208.28" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="MOSI"/>
-<wire x1="337.82" y1="71.12" x2="358.14" y2="71.12" width="0.1524" layer="91"/>
-<label x="342.9" y="71.12" size="1.9304" layer="95"/>
-</segment>
 </net>
 <net name="SPI_SOMI" class="0">
 <segment>
@@ -30398,11 +30231,6 @@ Source: coiltronics_dr_series.pdf</description>
 <pinref part="U$3" gate="G$1" pin="MISO"/>
 <wire x1="289.56" y1="203.2" x2="271.78" y2="203.2" width="0.1524" layer="91"/>
 <label x="271.78" y="203.2" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="MISO"/>
-<wire x1="337.82" y1="68.58" x2="358.14" y2="68.58" width="0.1524" layer="91"/>
-<label x="342.9" y="68.58" size="1.9304" layer="95"/>
 </segment>
 </net>
 <net name="UART0_RX" class="0">
@@ -30447,11 +30275,6 @@ Source: coiltronics_dr_series.pdf</description>
 </net>
 <net name="SENSE_3V3" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="3V3"/>
-<wire x1="309.88" y1="114.3" x2="309.88" y2="127" width="0.1524" layer="91"/>
-<label x="309.88" y="119.38" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <wire x1="210.82" y1="76.2" x2="226.06" y2="76.2" width="0.1524" layer="91"/>
 <label x="210.82" y="76.2" size="1.778" layer="95"/>
 <pinref part="J5" gate="G$1" pin="4"/>
@@ -30487,11 +30310,6 @@ Source: coiltronics_dr_series.pdf</description>
 </segment>
 </net>
 <net name="SENSE_5V" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="5V"/>
-<wire x1="314.96" y1="114.3" x2="314.96" y2="127" width="0.1524" layer="91"/>
-<label x="314.96" y="119.38" size="1.778" layer="95" rot="R90"/>
-</segment>
 <segment>
 <wire x1="210.82" y1="78.74" x2="226.06" y2="78.74" width="0.1524" layer="91"/>
 <label x="210.82" y="78.74" size="1.778" layer="95"/>
@@ -30647,104 +30465,6 @@ Source: coiltronics_dr_series.pdf</description>
 <pinref part="U$2" gate="G$1" pin="ADC7"/>
 <wire x1="38.1" y1="205.74" x2="20.32" y2="205.74" width="0.1524" layer="91"/>
 <label x="20.32" y="205.74" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WADC_4" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="ANALOG4"/>
-<wire x1="284.48" y1="96.52" x2="264.16" y2="96.52" width="0.1524" layer="91"/>
-<label x="264.16" y="96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WADC_3" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="ANALOG3"/>
-<wire x1="284.48" y1="93.98" x2="264.16" y2="93.98" width="0.1524" layer="91"/>
-<label x="264.16" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WADC_2" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="ANALOG2"/>
-<wire x1="284.48" y1="91.44" x2="264.16" y2="91.44" width="0.1524" layer="91"/>
-<label x="264.16" y="91.44" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WADC_1" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="ANALOG1"/>
-<wire x1="284.48" y1="88.9" x2="264.16" y2="88.9" width="0.1524" layer="91"/>
-<label x="264.16" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WDIO_1" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="DIGITAL1"/>
-<wire x1="337.82" y1="86.36" x2="358.14" y2="86.36" width="0.1524" layer="91"/>
-<label x="342.9" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WDIO_2" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="DIGITAL2"/>
-<wire x1="337.82" y1="88.9" x2="358.14" y2="88.9" width="0.1524" layer="91"/>
-<label x="342.9" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WDIO_3" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="DIGITAL3"/>
-<wire x1="337.82" y1="91.44" x2="358.14" y2="91.44" width="0.1524" layer="91"/>
-<label x="342.9" y="91.44" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WDIO_4" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="DIGITAL4"/>
-<wire x1="337.82" y1="93.98" x2="358.14" y2="93.98" width="0.1524" layer="91"/>
-<label x="342.9" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WDIO_5" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="DIGITAL5"/>
-<wire x1="337.82" y1="96.52" x2="358.14" y2="96.52" width="0.1524" layer="91"/>
-<label x="342.9" y="96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WDIO_6" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="DIGITAL6"/>
-<wire x1="337.82" y1="99.06" x2="358.14" y2="99.06" width="0.1524" layer="91"/>
-<label x="342.9" y="99.06" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WDIO_7" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="DIGITAL7"/>
-<wire x1="337.82" y1="101.6" x2="358.14" y2="101.6" width="0.1524" layer="91"/>
-<label x="342.9" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WADC_5" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="ANALOG5"/>
-<wire x1="284.48" y1="99.06" x2="264.16" y2="99.06" width="0.1524" layer="91"/>
-<label x="264.16" y="99.06" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WADC_6" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="ANALOG6"/>
-<wire x1="284.48" y1="101.6" x2="264.16" y2="101.6" width="0.1524" layer="91"/>
-<label x="264.16" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WADC_7" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="ANALOG7"/>
-<wire x1="284.48" y1="104.14" x2="264.16" y2="104.14" width="0.1524" layer="91"/>
-<label x="264.16" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RS485_N" class="2">
