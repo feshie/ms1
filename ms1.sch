@@ -29887,22 +29887,6 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <label x="5.08" y="185.42" size="1.9304" layer="95"/>
 </segment>
 </net>
-<net name="323_3V3" class="0">
-<segment>
-<wire x1="180.34" y1="129.54" x2="157.48" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="127" x2="180.34" y2="127" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="127" x2="180.34" y2="129.54" width="0.1524" layer="91"/>
-<junction x="180.34" y="129.54"/>
-<label x="157.48" y="129.54" size="1.778" layer="95"/>
-<pinref part="IC1" gate="P" pin="VCC"/>
-<pinref part="C23" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="JP4" gate="1" pin="3"/>
-<wire x1="190.5" y1="180.34" x2="170.18" y2="180.34" width="0.1524" layer="91"/>
-<label x="170.18" y="180.34" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="485_3V3" class="0">
 <segment>
 <wire x1="170.18" y1="78.74" x2="157.48" y2="78.74" width="0.1524" layer="91"/>
@@ -29915,9 +29899,9 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <label x="152.4" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="1" pin="1"/>
-<wire x1="190.5" y1="185.42" x2="170.18" y2="185.42" width="0.1524" layer="91"/>
-<label x="170.18" y="185.42" size="1.778" layer="95"/>
+<pinref part="JP4" gate="1" pin="3"/>
+<wire x1="190.5" y1="180.34" x2="170.18" y2="180.34" width="0.1524" layer="91"/>
+<label x="170.18" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -30041,6 +30025,22 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <pinref part="U$5" gate="G$1" pin="CA0"/>
 <wire x1="38.1" y1="177.8" x2="20.32" y2="177.8" width="0.1524" layer="91"/>
 <label x="20.32" y="177.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="232_3V3" class="0">
+<segment>
+<pinref part="JP4" gate="1" pin="1"/>
+<wire x1="190.5" y1="185.42" x2="170.18" y2="185.42" width="0.1524" layer="91"/>
+<label x="170.18" y="185.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="180.34" y1="129.54" x2="157.48" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="127" x2="180.34" y2="127" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="127" x2="180.34" y2="129.54" width="0.1524" layer="91"/>
+<junction x="180.34" y="129.54"/>
+<label x="157.48" y="129.54" size="1.778" layer="95"/>
+<pinref part="IC1" gate="P" pin="VCC"/>
+<pinref part="C23" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
