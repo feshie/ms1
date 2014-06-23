@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="20" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -148,6 +148,7 @@
 <text x="2.413" y="82.423" size="1.778" layer="25" rot="R90">V0.1</text>
 <text x="2.794" y="0.381" size="1.778" layer="25">PJB</text>
 <text x="9.652" y="0.254" size="1.778" layer="25">TW</text>
+<text x="14.859" y="0.254" size="1.778" layer="25">GMB</text>
 </plain>
 <libraries>
 <library name="testpad">
@@ -1293,10 +1294,10 @@ MAX3223-MAX3243.pdf</description>
 <clearance class="1" value="0.1524"/>
 </class>
 <class number="2" name="rs485" width="0.3048" drill="0.3556">
-<clearance class="2" value="0.1524"/>
+<clearance class="2" value="0.3048"/>
 </class>
 </classes>
-<designrules name="Hackvana">
+<designrules name="Hackvana *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -1364,8 +1365,8 @@ design rules under a new name.</description>
 <param name="mvCreamFrame" value="0"/>
 <param name="mlMinStopFrame" value="2mil"/>
 <param name="mlMaxStopFrame" value="2mil"/>
-<param name="mlMinCreamFrame" value="0mil"/>
-<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlMinCreamFrame" value="0.15mm"/>
+<param name="mlMaxCreamFrame" value="0.15mm"/>
 <param name="mlViaStopLimit" value="100mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
@@ -1958,6 +1959,9 @@ design rules under a new name.</description>
 <via x="2.921" y="25.527" extent="1-16" drill="0.4826" shape="square"/>
 <via x="6.604" y="33.528" extent="1-16" drill="0.4826" shape="square"/>
 <via x="64.897" y="18.161" extent="1-16" drill="0.4826" shape="square"/>
+<via x="61.976" y="32.385" extent="1-16" drill="0.4826" shape="square"/>
+<via x="87.503" y="76.581" extent="1-16" drill="0.4826" shape="square"/>
+<via x="67.691" y="86.995" extent="1-16" drill="0.4826" shape="square"/>
 </signal>
 <signal name="VCC">
 <contactref element="R17" pad="2"/>
@@ -2851,10 +2855,53 @@ design rules under a new name.</description>
 </polygon>
 <via x="11.303" y="2.667" extent="1-16" drill="0.6" shape="square"/>
 <via x="47.244" y="2.667" extent="1-16" drill="0.6" shape="square"/>
-<via x="48.514" y="34.163" extent="1-16" drill="0.6" shape="square"/>
+<via x="48.514" y="33.655" extent="1-16" drill="0.6" shape="square"/>
 <via x="10.795" y="37.465" extent="1-16" drill="0.6" shape="square"/>
 <via x="41.021" y="10.287" extent="1-16" drill="0.6" shape="square"/>
 <via x="17.145" y="18.796" extent="1-16" drill="0.6" shape="square"/>
+<via x="26.035" y="37.465" extent="1-16" drill="0.6" shape="square"/>
+<via x="33.655" y="37.465" extent="1-16" drill="0.6" shape="square"/>
+<via x="18.415" y="33.655" extent="1-16" drill="0.6" shape="square"/>
+<via x="26.035" y="33.655" extent="1-16" drill="0.6" shape="square"/>
+<via x="33.655" y="33.655" extent="1-16" drill="0.6" shape="square"/>
+<via x="45.085" y="33.655" extent="1-16" drill="0.6" shape="square"/>
+<via x="22.225" y="22.225" extent="1-16" drill="0.6" shape="square"/>
+<via x="29.845" y="22.225" extent="1-16" drill="0.6" shape="square"/>
+<via x="37.465" y="22.225" extent="1-16" drill="0.6" shape="square"/>
+<via x="22.225" y="18.415" extent="1-16" drill="0.6" shape="square"/>
+<via x="29.845" y="18.415" extent="1-16" drill="0.6" shape="square"/>
+<via x="37.465" y="18.415" extent="1-16" drill="0.6" shape="square"/>
+<via x="22.225" y="14.605" extent="1-16" drill="0.6" shape="square"/>
+<via x="29.845" y="14.605" extent="1-16" drill="0.6" shape="square"/>
+<via x="37.465" y="14.605" extent="1-16" drill="0.6" shape="square"/>
+<via x="22.225" y="10.795" extent="1-16" drill="0.6" shape="square"/>
+<via x="29.845" y="10.795" extent="1-16" drill="0.6" shape="square"/>
+<via x="22.225" y="6.985" extent="1-16" drill="0.6" shape="square"/>
+<via x="29.845" y="6.985" extent="1-16" drill="0.6" shape="square"/>
+<via x="37.465" y="6.985" extent="1-16" drill="0.6" shape="square"/>
+<via x="22.225" y="3.175" extent="1-16" drill="0.6" shape="square"/>
+<via x="29.845" y="3.175" extent="1-16" drill="0.6" shape="square"/>
+<via x="37.465" y="3.175" extent="1-16" drill="0.6" shape="square"/>
+<via x="44.958" y="27.051" extent="1-16" drill="0.6" shape="square"/>
+<via x="48.514" y="27.051" extent="1-16" drill="0.6" shape="square"/>
+<via x="44.958" y="25.019" extent="1-16" drill="0.6" shape="square"/>
+<via x="42.926" y="33.655" extent="1-16" drill="0.6" shape="square"/>
+<via x="42.926" y="27.051" extent="1-16" drill="0.6" shape="square"/>
+<via x="42.926" y="25.019" extent="1-16" drill="0.6" shape="square"/>
+<via x="10.795" y="30.607" extent="1-16" drill="0.6" shape="square"/>
+<via x="10.795" y="28.067" extent="1-16" drill="0.6" shape="square"/>
+<via x="10.795" y="25.527" extent="1-16" drill="0.6" shape="square"/>
+<via x="18.415" y="30.607" extent="1-16" drill="0.6" shape="square"/>
+<via x="18.415" y="28.067" extent="1-16" drill="0.6" shape="square"/>
+<via x="18.415" y="25.527" extent="1-16" drill="0.6" shape="square"/>
+<via x="26.035" y="30.607" extent="1-16" drill="0.6" shape="square"/>
+<via x="26.035" y="28.067" extent="1-16" drill="0.6" shape="square"/>
+<via x="26.035" y="25.527" extent="1-16" drill="0.6" shape="square"/>
+<via x="33.655" y="30.607" extent="1-16" drill="0.6" shape="square"/>
+<via x="33.655" y="28.067" extent="1-16" drill="0.6" shape="square"/>
+<via x="33.655" y="25.527" extent="1-16" drill="0.6" shape="square"/>
+<via x="18.3642" y="37.465" extent="1-16" drill="0.6" shape="square"/>
+<via x="10.795" y="33.655" extent="1-16" drill="0.6" shape="square"/>
 </signal>
 <signal name="N$24">
 <contactref element="L3" pad="2"/>
@@ -3204,26 +3251,9 @@ design rules under a new name.</description>
 <signal name="RS485_N" class="2">
 <contactref element="U4" pad="7"/>
 <contactref element="J10" pad="2"/>
-<wire x1="89.916" y1="15.4432" x2="89.916" y2="14.3764" width="0.3048" layer="1"/>
-<wire x1="89.916" y1="14.3764" x2="89.5096" y2="13.97" width="0.3048" layer="1"/>
-<wire x1="89.5096" y1="6.7056" x2="89.5096" y2="8.919475" width="0.3048" layer="1"/>
-<wire x1="89.5096" y1="8.919475" x2="89.8525" y2="9.262375" width="0.3048" layer="1" curve="-90"/>
-<wire x1="89.8525" y1="9.262375" x2="91.37581875" y2="9.262375" width="0.3048" layer="1"/>
-<wire x1="91.37581875" y1="9.262375" x2="91.71871875" y2="9.605275" width="0.3048" layer="1" curve="90"/>
-<wire x1="91.71871875" y1="9.605275" x2="91.71871875" y2="9.69705" width="0.3048" layer="1"/>
-<wire x1="91.71871875" y1="9.69705" x2="91.37581875" y2="10.03995" width="0.3048" layer="1" curve="90"/>
-<wire x1="91.37581875" y1="10.03995" x2="89.8525" y2="10.03995" width="0.3048" layer="1"/>
-<wire x1="89.8525" y1="10.03995" x2="89.5096" y2="10.38285" width="0.3048" layer="1" curve="-90"/>
-<wire x1="89.5096" y1="10.38285" x2="89.5096" y2="10.474625" width="0.3048" layer="1"/>
-<wire x1="89.5096" y1="10.474625" x2="89.8525" y2="10.817525" width="0.3048" layer="1" curve="-90"/>
-<wire x1="89.8525" y1="10.817525" x2="91.37581875" y2="10.817525" width="0.3048" layer="1"/>
-<wire x1="91.37581875" y1="10.817525" x2="91.71871875" y2="11.160425" width="0.3048" layer="1" curve="90"/>
-<wire x1="91.71871875" y1="11.160425" x2="91.71871875" y2="11.2522" width="0.3048" layer="1"/>
-<wire x1="91.71871875" y1="11.2522" x2="91.37581875" y2="11.5951" width="0.3048" layer="1" curve="90"/>
-<wire x1="91.37581875" y1="11.5951" x2="89.8525" y2="11.5951" width="0.3048" layer="1"/>
-<wire x1="89.8525" y1="11.5951" x2="89.5096" y2="11.938" width="0.3048" layer="1" curve="-90"/>
-<wire x1="89.5096" y1="11.938" x2="89.5096" y2="13.97" width="0.3048" layer="1"/>
-<wire x1="89.5096" y1="6.7056" x2="88.392" y2="5.588" width="0.3048" layer="1"/>
+<wire x1="89.916" y1="11.176" x2="89.916" y2="15.4432" width="0.3048" layer="1"/>
+<wire x1="89.916" y1="11.176" x2="88.392" y2="9.652" width="0.3048" layer="1"/>
+<wire x1="88.392" y1="9.652" x2="88.392" y2="5.588" width="0.3048" layer="1"/>
 </signal>
 <signal name="TTL_TX">
 <contactref element="J12" pad="3"/>
@@ -3331,17 +3361,11 @@ design rules under a new name.</description>
 <signal name="RS485_P" class="2">
 <contactref element="U4" pad="6"/>
 <contactref element="J10" pad="3"/>
-<wire x1="88.646" y1="15.4432" x2="88.646" y2="14.3764" width="0.3048" layer="1"/>
-<wire x1="88.646" y1="14.3764" x2="89.0524" y2="13.97" width="0.3048" layer="1"/>
-<wire x1="89.0524" y1="8.0264" x2="89.0524" y2="13.97" width="0.3048" layer="1"/>
-<wire x1="89.0524" y1="8.0264" x2="88.646" y2="7.62" width="0.3048" layer="1"/>
-<wire x1="88.646" y1="7.62" x2="88.011" y2="7.62" width="0.3048" layer="1"/>
-<wire x1="88.011" y1="7.62" x2="87.249" y2="6.858" width="0.3048" layer="1"/>
-<wire x1="87.249" y1="6.858" x2="87.249" y2="4.191" width="0.3048" layer="1"/>
-<wire x1="87.249" y1="4.191" x2="87.884" y2="3.556" width="0.3048" layer="1"/>
-<wire x1="87.884" y1="3.556" x2="90.297" y2="3.556" width="0.3048" layer="1"/>
-<wire x1="90.297" y1="3.556" x2="90.932" y2="4.191" width="0.3048" layer="1"/>
-<wire x1="90.932" y1="4.191" x2="90.932" y2="5.588" width="0.3048" layer="1"/>
+<wire x1="88.646" y1="15.4432" x2="88.646" y2="11.684" width="0.3048" layer="1"/>
+<via x="88.646" y="11.684" extent="1-16" drill="0.3556"/>
+<wire x1="88.646" y1="11.684" x2="88.646" y2="11.43" width="0.3048" layer="16"/>
+<wire x1="88.646" y1="11.43" x2="90.932" y2="9.144" width="0.3048" layer="16"/>
+<wire x1="90.932" y1="9.144" x2="90.932" y2="5.588" width="0.3048" layer="16"/>
 </signal>
 <signal name="ADC_3V3">
 <contactref element="U$5" pad="A4" route="any" routetag="ADC_3V3"/>

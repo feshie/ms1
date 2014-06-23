@@ -28066,7 +28066,7 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <clearance class="1" value="0.1524"/>
 </class>
 <class number="2" name="rs485" width="0.3048" drill="0.3556">
-<clearance class="2" value="0.1524"/>
+<clearance class="2" value="0.3048"/>
 </class>
 </classes>
 <parts>
