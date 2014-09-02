@@ -28227,7 +28227,6 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <part name="U4" library="glacsweb" deviceset="ISL3179EIBZ" device=""/>
 <part name="C20" library="glacsweb" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="GND10" library="glacsweb" deviceset="GND" device=""/>
-<part name="R27" library="resistor" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="JP3" library="SparkFun-Passives" deviceset="JUMPER-2" device="SMD-NC"/>
 <part name="J13" library="farnell-parts" deviceset="5-PIN-MOLEX" device="" value="Radio"/>
 <part name="R16" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
@@ -28278,6 +28277,8 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <part name="R30" library="resistor" deviceset="R-EU_" device="R0805" value="120"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="JP5" library="jumper" deviceset="JP1E" device="" value="GND-LINK"/>
+<part name="LED12" library="led" deviceset="LED" device="CHIP-LED0805" value="TXEN"/>
+<part name="R31" library="resistor" deviceset="R-EU_" device="R0805" value="56"/>
 </parts>
 <sheets>
 <sheet>
@@ -28447,6 +28448,8 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <instance part="F8" gate="G$1" x="63.5" y="66.04"/>
 <instance part="GND1" gate="1" x="76.2" y="193.04"/>
 <instance part="JP5" gate="A" x="73.66" y="195.58" rot="R90"/>
+<instance part="LED12" gate="G$1" x="243.84" y="208.28"/>
+<instance part="R31" gate="G$1" x="243.84" y="220.98" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -29143,6 +29146,9 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <junction x="276.86" y="203.2"/>
 <junction x="287.02" y="203.2"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
+<wire x1="243.84" y1="203.2" x2="254" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="LED12" gate="G$1" pin="C"/>
+<junction x="254" y="203.2"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -29303,6 +29309,20 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <pinref part="F8" gate="G$1" pin="P$2"/>
 </segment>
 </net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="LED12" gate="G$1" pin="A"/>
+<pinref part="R31" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="215.9" x2="243.84" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TXEN" class="0">
+<segment>
+<wire x1="243.84" y1="226.06" x2="243.84" y2="243.84" width="0.1524" layer="91"/>
+<label x="243.84" y="231.14" size="1.778" layer="95" rot="R90"/>
+<pinref part="R31" gate="G$1" pin="2"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -29347,7 +29367,6 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <attribute name="VALUE" x="150.241" y="71.374" size="1.778" layer="96" rot="MR270"/>
 </instance>
 <instance part="GND10" gate="1" x="165.1" y="58.42"/>
-<instance part="R27" gate="G$1" x="157.48" y="73.66" rot="R90"/>
 <instance part="IC1" gate="G$1" x="187.96" y="154.94"/>
 <instance part="IC1" gate="P" x="187.96" y="129.54" rot="R90"/>
 <instance part="GND28" gate="1" x="210.82" y="129.54" rot="R90"/>
@@ -29422,9 +29441,6 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <wire x1="170.18" y1="63.5" x2="165.1" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="U4" gate="A" pin="GND"/>
-<pinref part="U4" gate="A" pin="~RE"/>
-<wire x1="170.18" y1="73.66" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="73.66" x2="165.1" y2="63.5" width="0.1524" layer="91"/>
 <junction x="165.1" y="63.5"/>
 <pinref part="C20" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="67.564" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
@@ -29844,15 +29860,6 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <label x="281.94" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="U4" gate="A" pin="DE"/>
-<wire x1="170.18" y1="71.12" x2="162.56" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="71.12" x2="162.56" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="68.58" x2="157.48" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$59" class="0">
 <segment>
 <wire x1="165.1" y1="149.86" x2="172.72" y2="149.86" width="0.1524" layer="91"/>
@@ -29963,13 +29970,10 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 </net>
 <net name="485_3V3" class="0">
 <segment>
-<wire x1="170.18" y1="78.74" x2="157.48" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="78.74" x2="152.4" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="78.74" x2="152.4" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="75.184" x2="152.4" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="U4" gate="A" pin="VCC"/>
 <pinref part="C20" gate="G$1" pin="1"/>
-<pinref part="R27" gate="G$1" pin="2"/>
-<junction x="157.48" y="78.74"/>
 <label x="152.4" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -30094,13 +30098,6 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <pinref part="F6" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="DIO_2" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="CA0"/>
-<wire x1="38.1" y1="177.8" x2="20.32" y2="177.8" width="0.1524" layer="91"/>
-<label x="20.32" y="177.8" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="232_3V3" class="0">
 <segment>
 <pinref part="JP4" gate="1" pin="1"/>
@@ -30115,6 +30112,21 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <label x="157.48" y="129.54" size="1.778" layer="95"/>
 <pinref part="IC1" gate="P" pin="VCC"/>
 <pinref part="C23" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="TXEN" class="0">
+<segment>
+<pinref part="U4" gate="A" pin="~RE"/>
+<wire x1="170.18" y1="73.66" x2="154.94" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U4" gate="A" pin="DE"/>
+<wire x1="170.18" y1="71.12" x2="170.18" y2="73.66" width="0.1524" layer="91"/>
+<junction x="170.18" y="73.66"/>
+<label x="154.94" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="CA0"/>
+<wire x1="38.1" y1="177.8" x2="20.32" y2="177.8" width="0.1524" layer="91"/>
+<label x="20.32" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
