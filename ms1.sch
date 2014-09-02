@@ -27886,6 +27886,29 @@ Source: coiltronics_dr_series.pdf</description>
 <rectangle x1="-0.3048" y1="-0.3048" x2="0.3048" y2="0.3048" layer="51"/>
 <rectangle x1="2.2352" y1="-0.3048" x2="2.8448" y2="0.3048" layer="51"/>
 </package>
+<package name="JP1">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-1.016" y1="0" x2="-1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="0" x2="-1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0" x2="1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0" x2="1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.254" x2="1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-2.54" x2="1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="2.286" x2="1.016" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="2.286" x2="1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="2.54" x2="-1.016" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="2.286" x2="-1.016" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="2.286" x2="-1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.254" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-2.54" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-2.54" x2="1.016" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="-1.27" drill="0.9144" shape="long"/>
+<pad name="2" x="0" y="1.27" drill="0.9144" shape="long"/>
+<text x="-1.651" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="2.921" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.3048" y1="0.9652" x2="0.3048" y2="1.5748" layer="51"/>
+<rectangle x1="-0.3048" y1="-1.5748" x2="0.3048" y2="-0.9652" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JP3E">
@@ -27905,6 +27928,20 @@ Source: coiltronics_dr_series.pdf</description>
 <pin name="2" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="3" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
 </symbol>
+<symbol name="JP2E">
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0" x2="3.175" y2="0" width="0.4064" layer="94"/>
+<wire x1="3.175" y1="0" x2="3.175" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="3.175" y1="0.635" x2="-0.635" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.4064" layer="94"/>
+<text x="-1.27" y="0" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="1" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="JP2E" prefix="JP" uservalue="yes">
@@ -27918,6 +27955,23 @@ Source: coiltronics_dr_series.pdf</description>
 <connect gate="1" pin="1" pad="1"/>
 <connect gate="1" pin="2" pad="2"/>
 <connect gate="1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JP1E" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="JP2E" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="JP1">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -28222,6 +28276,8 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <part name="F7" library="farnell-parts" deviceset="MCF0805" device=""/>
 <part name="F8" library="farnell-parts" deviceset="MCF0805" device=""/>
 <part name="R30" library="resistor" deviceset="R-EU_" device="R0805" value="120"/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="JP5" library="jumper" deviceset="JP1E" device="" value="GND-LINK"/>
 </parts>
 <sheets>
 <sheet>
@@ -28389,6 +28445,8 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <instance part="F3" gate="G$1" x="27.94" y="60.96" rot="R90"/>
 <instance part="F7" gate="G$1" x="63.5" y="43.18"/>
 <instance part="F8" gate="G$1" x="63.5" y="66.04"/>
+<instance part="GND1" gate="1" x="76.2" y="193.04"/>
+<instance part="JP5" gate="A" x="73.66" y="195.58" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -28531,6 +28589,10 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="GND16" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="JP5" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -29159,11 +29221,15 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <junction x="165.1" y="200.66"/>
 </segment>
 <segment>
-<wire x1="55.88" y1="203.2" x2="83.82" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="203.2" x2="76.2" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="AGND" gate="G$1" pin="TP"/>
+<wire x1="76.2" y1="203.2" x2="83.82" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="203.2" x2="88.9" y2="203.2" width="0.1524" layer="91"/>
 <junction x="83.82" y="203.2"/>
 <label x="60.96" y="203.2" size="1.778" layer="95"/>
+<wire x1="76.2" y1="198.12" x2="76.2" y2="203.2" width="0.1524" layer="91"/>
+<junction x="76.2" y="203.2"/>
+<pinref part="JP5" gate="A" pin="2"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="3"/>
