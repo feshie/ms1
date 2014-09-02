@@ -145,7 +145,7 @@
 <text x="65.532" y="25.908" size="1.778" layer="25">232</text>
 <text x="76.835" y="26.543" size="1.778" layer="25">485</text>
 <text x="9.779" y="97.028" size="1.778" layer="25">MS1</text>
-<text x="2.413" y="82.423" size="1.778" layer="25" rot="R90">V0.1</text>
+<text x="2.413" y="82.423" size="1.778" layer="25" rot="R90">V0.2</text>
 <text x="2.794" y="0.381" size="1.778" layer="25">PJB</text>
 <text x="9.652" y="0.254" size="1.778" layer="25">TW</text>
 <text x="14.859" y="0.254" size="1.778" layer="25">GMB</text>
@@ -1837,6 +1837,7 @@ design rules under a new name.</description>
 <element name="F8" library="farnell-parts" package="0805" value="MCF0805" x="94.996" y="94.488" smashed="yes" rot="MR90">
 <attribute name="NAME" x="96.012" y="93.726" size="1.27" layer="26" rot="MR90"/>
 </element>
+<element name="R30" library="resistor" package="R0805" value="120" x="89.408" y="13.208" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3251,9 +3252,12 @@ design rules under a new name.</description>
 <signal name="RS485_N" class="2">
 <contactref element="U4" pad="7"/>
 <contactref element="J10" pad="2"/>
-<wire x1="89.916" y1="11.176" x2="89.916" y2="15.4432" width="0.3048" layer="1"/>
+<wire x1="89.916" y1="11.176" x2="89.916" y2="13.208" width="0.3048" layer="1"/>
+<wire x1="89.916" y1="13.208" x2="89.916" y2="15.4432" width="0.3048" layer="1"/>
 <wire x1="89.916" y1="11.176" x2="88.392" y2="9.652" width="0.3048" layer="1"/>
 <wire x1="88.392" y1="9.652" x2="88.392" y2="5.588" width="0.3048" layer="1"/>
+<contactref element="R30" pad="1"/>
+<wire x1="90.258" y1="13.208" x2="89.916" y2="13.208" width="0.3048" layer="1"/>
 </signal>
 <signal name="TTL_TX">
 <contactref element="J12" pad="3"/>
@@ -3361,11 +3365,14 @@ design rules under a new name.</description>
 <signal name="RS485_P" class="2">
 <contactref element="U4" pad="6"/>
 <contactref element="J10" pad="3"/>
-<wire x1="88.646" y1="15.4432" x2="88.646" y2="11.684" width="0.3048" layer="1"/>
+<wire x1="88.646" y1="15.4432" x2="88.646" y2="13.208" width="0.3048" layer="1"/>
 <via x="88.646" y="11.684" extent="1-16" drill="0.3556"/>
+<wire x1="88.646" y1="13.208" x2="88.646" y2="11.684" width="0.3048" layer="1"/>
 <wire x1="88.646" y1="11.684" x2="88.646" y2="11.43" width="0.3048" layer="16"/>
 <wire x1="88.646" y1="11.43" x2="90.932" y2="9.144" width="0.3048" layer="16"/>
 <wire x1="90.932" y1="9.144" x2="90.932" y2="5.588" width="0.3048" layer="16"/>
+<contactref element="R30" pad="2"/>
+<wire x1="88.558" y1="13.208" x2="88.646" y2="13.208" width="0.3048" layer="1"/>
 </signal>
 <signal name="ADC_3V3">
 <contactref element="U$5" pad="A4" route="any" routetag="ADC_3V3"/>

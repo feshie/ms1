@@ -28221,6 +28221,7 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <part name="F6" library="farnell-parts" deviceset="MCF0805" device=""/>
 <part name="F7" library="farnell-parts" deviceset="MCF0805" device=""/>
 <part name="F8" library="farnell-parts" deviceset="MCF0805" device=""/>
+<part name="R30" library="resistor" deviceset="R-EU_" device="R0805" value="120"/>
 </parts>
 <sheets>
 <sheet>
@@ -29308,6 +29309,7 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <instance part="F4" gate="G$1" x="322.58" y="134.62"/>
 <instance part="F5" gate="G$1" x="276.86" y="86.36"/>
 <instance part="F6" gate="G$1" x="322.58" y="88.9"/>
+<instance part="R30" gate="G$1" x="231.14" y="71.12" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -29766,6 +29768,9 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <wire x1="205.74" y1="71.12" x2="226.06" y2="71.12" width="0.1524" layer="91"/>
 <label x="210.82" y="71.12" size="1.778" layer="95"/>
 <pinref part="U4" gate="A" pin="B/Z"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<wire x1="231.14" y1="66.04" x2="226.06" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="66.04" x2="226.06" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J10" gate="G$1" pin="2"/>
@@ -29853,6 +29858,9 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <pinref part="U4" gate="A" pin="A/Y"/>
 <wire x1="205.74" y1="73.66" x2="226.06" y2="73.66" width="0.1524" layer="91"/>
 <label x="210.82" y="73.66" size="1.778" layer="95"/>
+<wire x1="226.06" y1="73.66" x2="226.06" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="R30" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="76.2" x2="231.14" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J10" gate="G$1" pin="3"/>
