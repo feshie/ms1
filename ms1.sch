@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -30127,6 +30127,13 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <pinref part="U$5" gate="G$1" pin="CA0"/>
 <wire x1="38.1" y1="177.8" x2="20.32" y2="177.8" width="0.1524" layer="91"/>
 <label x="20.32" y="177.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DIO_2" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="ADC5"/>
+<wire x1="38.1" y1="210.82" x2="20.32" y2="210.82" width="0.1524" layer="91"/>
+<label x="20.32" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
