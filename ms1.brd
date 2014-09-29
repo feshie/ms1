@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1704,8 +1704,8 @@ design rules under a new name.</description>
 <element name="J12" library="farnell-parts" package="4-MOLEX" value="TTL_SERIAL" x="66.04" y="5.969" smashed="yes">
 <attribute name="VALUE" x="61.722" y="9.017" size="1.27" layer="25"/>
 </element>
-<element name="R9" library="resistor" package="R0805" value="51K" x="12.065" y="63.5" rot="R270"/>
-<element name="R8" library="resistor" package="R0805" value="100K" x="14.605" y="59.69" rot="R270"/>
+<element name="R9" library="resistor" package="R0805" value="200R 0.1%" x="12.065" y="63.5" rot="R270"/>
+<element name="R8" library="resistor" package="R0805" value="1K 0.1%" x="14.605" y="59.69" rot="R270"/>
 <element name="C10" library="resistor" package="C0805" value="1uF" x="16.8275" y="63.5" rot="R90"/>
 <element name="R4" library="resistor" package="R0805" value="100K" x="4.6355" y="65.4685" smashed="yes" rot="R90">
 <attribute name="NAME" x="3.7465" y="61.2775" size="1.27" layer="25" rot="R90"/>

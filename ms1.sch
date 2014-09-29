@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -28205,8 +28205,8 @@ FOR OPEN-DRAIN AND PUSH-PULL APPLICATIONS</description>
 <part name="X1" library="con-kycon" deviceset="KUSBVX-BS1N" device=""/>
 <part name="J12" library="farnell-parts" deviceset="4-PIN-MOLEX" device="" value="TTL_SERIAL"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="R9" library="resistor" deviceset="R-EU_" device="R0805" value="51K"/>
-<part name="R8" library="resistor" deviceset="R-EU_" device="R0805" value="100K"/>
+<part name="R9" library="resistor" deviceset="R-EU_" device="R0805" value="200R 0.1%"/>
+<part name="R8" library="resistor" deviceset="R-EU_" device="R0805" value="1K 0.1%"/>
 <part name="C10" library="resistor" deviceset="C-EU" device="C0805" value="1uF"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="R0805" value="100K"/>
